@@ -1,0 +1,1511 @@
+/* =========================
+   BASIC SETUP
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f4ead7;
+    color: #5a3b24;
+    font-family: "Poppins", sans-serif;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    min-height: 180px;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 30px 50px;
+}
+
+
+/* Hamburger */
+
+.menu-icon {
+    position: absolute;
+    left: 50px;
+    top: 60px;
+
+    width: 42px;
+    cursor: pointer;
+}
+
+.menu-icon span {
+    display: block;
+    height: 3px;
+    background: #68452c;
+    margin-bottom: 8px;
+    border-radius: 5px;
+}
+
+
+/* Logo */
+
+.logo {
+    text-align: center;
+}
+
+.lotus {
+    font-size: 35px;
+    margin-bottom: -5px;
+}
+
+.logo h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 58px;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.logo p {
+    font-family: "Playfair Display", serif;
+    font-size: 22px;
+    margin-top: 5px;
+}
+
+
+/* Monument */
+
+.monument-icon {
+    position: absolute;
+    right: 50px;
+    top: 60px;
+
+    font-size: 55px;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+
+    padding: 0 30px 25px;
+}
+
+.nav-button {
+    min-width: 270px;
+
+    padding: 13px 25px;
+
+    border: 1px solid #cdb995;
+    border-radius: 35px;
+
+    text-decoration: none;
+    color: #68452c;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
+
+    transition: 0.3s;
+}
+
+.nav-button:hover {
+    background: #e8dbc2;
+}
+
+.nav-button.active {
+    background: #53603c;
+    color: white;
+    border-color: #53603c;
+}
+
+
+/* =========================
+   MAIN
+========================= */
+
+main {
+    max-width: 1250px;
+    margin: auto;
+    padding: 0 30px;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    height: 480px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: 25px;
+
+    margin-bottom: 25px;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(
+        90deg,
+        rgba(40, 25, 15, 0.45),
+        transparent 65%
+    );
+}
+
+.hero-text {
+    position: absolute;
+    left: 45px;
+    top: 45px;
+
+    color: white;
+}
+
+.hero-text p {
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.hero-text h2 {
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    font-size: 42px;
+    font-weight: 400;
+    line-height: 1.1;
+}
+
+
+/* =========================
+   INFORMATION CARDS
+========================= */
+
+.info-card {
+    border: 1px solid #d8c5a4;
+    border-radius: 25px;
+
+    padding: 25px;
+
+    margin-bottom: 20px;
+
+    background: rgba(255, 250, 240, 0.25);
+}
+
+
+/* Section heading */
+
+.section-title {
+    display: flex;
+    align-items: center;
+
+    gap: 18px;
+
+    border-bottom: 1px solid #cdb995;
+
+    padding-bottom: 10px;
+
+    margin-bottom: 20px;
+}
+
+.section-title h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.section-icon {
+    font-size: 35px;
+}
+
+
+/* Content */
+
+.info-content {
+    display: flex;
+    align-items: center;
+
+    gap: 30px;
+}
+
+.info-content img {
+    width: 300px;
+    height: 180px;
+
+    object-fit: cover;
+
+    border-radius: 18px;
+}
+
+.info-content p {
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
+
+    line-height: 1.45;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    max-width: 1250px;
+
+    margin: auto;
+
+    padding: 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    font-size: 18px;
+}
+
+.footer-message {
+    display: flex;
+    flex-direction: column;
+
+    border-left: 2px solid #a98c64;
+
+    padding-left: 20px;
+}
+
+.footer-message strong {
+    font-weight: 400;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 800px) {
+
+    .header {
+        min-height: 150px;
+    }
+
+    .logo h1 {
+        font-size: 42px;
+    }
+
+    .logo p {
+        font-size: 16px;
+    }
+
+    .menu-icon {
+        left: 20px;
+        top: 45px;
+    }
+
+    .monument-icon {
+        right: 20px;
+        top: 45px;
+        font-size: 35px;
+    }
+
+    .navigation {
+        gap: 8px;
+    }
+
+    .nav-button {
+        min-width: auto;
+        flex: 1;
+
+        font-size: 14px;
+        padding: 12px 8px;
+    }
+
+    .hero {
+        height: 350px;
+    }
+
+    .hero-text {
+        left: 25px;
+        top: 30px;
+    }
+
+    .hero-text h2 {
+        font-size: 30px;
+    }
+
+    .info-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .info-content img {
+        width: 100%;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+}
+/* =========================
+   EXPLORE PAGE
+========================= */
+
+.explore-heading {
+    text-align: center;
+    padding: 35px 20px 20px;
+}
+
+.explore-heading p:first-child {
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.explore-heading h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 40px;
+    font-weight: 500;
+    margin: 8px 0;
+}
+
+.explore-description {
+    max-width: 650px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+
+/* SEARCH */
+
+.search-box {
+    max-width: 700px;
+    margin: 20px auto;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    background: #fffaf0;
+
+    border: 1px solid #d4c09c;
+    border-radius: 30px;
+
+    padding: 14px 20px;
+}
+
+.search-box span {
+    font-size: 20px;
+}
+
+.search-box input {
+    width: 100%;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+}
+
+
+/* FILTERS */
+
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+
+    flex-wrap: wrap;
+
+    margin: 20px 0 30px;
+}
+
+.filter {
+    border: 1px solid #cdb995;
+    background: transparent;
+
+    color: #68452c;
+
+    padding: 10px 22px;
+
+    border-radius: 25px;
+
+    font-family: "Poppins", sans-serif;
+
+    cursor: pointer;
+}
+
+.active-filter {
+    background: #53603c;
+    color: white;
+}
+
+
+/* LOCATION BAR */
+
+.location-bar {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    background: #e8ddc7;
+
+    border-radius: 18px;
+
+    padding: 18px 22px;
+
+    margin-bottom: 35px;
+}
+
+.location-bar > span {
+    font-size: 25px;
+}
+
+.location-bar p {
+    font-size: 13px;
+    margin-top: 3px;
+}
+
+.location-bar button {
+    margin-left: auto;
+
+    border: none;
+
+    background: #53603c;
+    color: white;
+
+    padding: 11px 18px;
+
+    border-radius: 20px;
+
+    cursor: pointer;
+}
+
+
+/* PLACES */
+
+.places-section {
+    padding-bottom: 40px;
+}
+
+.places-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 20px;
+}
+
+.places-title h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 30px;
+}
+
+.places-title span {
+    font-size: 14px;
+}
+
+
+/* GRID */
+
+.places-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+}
+
+
+/* PLACE CARD */
+
+.place-card {
+    background: #fffaf0;
+
+    border: 1px solid #d8c5a4;
+
+    border-radius: 22px;
+
+    overflow: hidden;
+
+    transition: 0.3s;
+}
+
+.place-card:hover {
+    transform: translateY(-5px);
+}
+
+.place-card > img {
+    width: 100%;
+    height: 230px;
+
+    object-fit: cover;
+}
+
+.place-info {
+    padding: 20px;
+}
+
+.category {
+    display: inline-block;
+
+    background: #e7dcc5;
+
+    padding: 5px 12px;
+
+    border-radius: 15px;
+
+    font-size: 12px;
+}
+
+.place-info h3 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 26px;
+
+    margin: 10px 0;
+}
+
+.place-info p {
+    font-size: 14px;
+
+    line-height: 1.5;
+
+    margin-bottom: 18px;
+}
+
+.place-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-top: 1px solid #ded0b5;
+
+    padding-top: 15px;
+
+    font-size: 13px;
+}
+
+.place-bottom a {
+    color: #53603c;
+
+    font-weight: 600;
+
+    text-decoration: none;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+    .explore-heading h2 {
+        font-size: 30px;
+    }
+
+    .location-bar {
+        flex-wrap: wrap;
+    }
+
+    .location-bar button {
+        margin-left: 0;
+    }
+
+    .places-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+/* =========================
+   PLACE DETAILS PAGE
+========================= */
+
+.back-button {
+    display: inline-block;
+
+    margin: 20px 0;
+
+    color: #68452c;
+
+    text-decoration: none;
+
+    font-size: 15px;
+}
+
+
+/* PLACE HERO */
+
+.place-hero {
+    height: 470px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: 25px;
+
+    margin-bottom: 20px;
+}
+
+.place-hero img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.place-hero-overlay {
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(
+        transparent 25%,
+        rgba(40, 25, 15, 0.8)
+    );
+}
+
+.place-hero-content {
+    position: absolute;
+
+    bottom: 40px;
+    left: 45px;
+
+    color: white;
+
+    max-width: 700px;
+}
+
+.place-hero-content span {
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+.place-hero-content h2 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 52px;
+
+    margin: 5px 0;
+}
+
+.place-hero-content p {
+    font-size: 16px;
+}
+
+
+/* QUICK ACTIONS */
+
+.quick-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    margin-bottom: 25px;
+
+    padding: 18px;
+
+    background: #e8ddc7;
+
+    border-radius: 20px;
+}
+
+.distance {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    margin-right: auto;
+}
+
+.distance > span {
+    font-size: 25px;
+}
+
+.distance strong {
+    display: block;
+    font-size: 18px;
+}
+
+.distance small {
+    display: block;
+    font-size: 12px;
+}
+
+.action-button {
+    border: 1px solid #53603c;
+
+    background: #53603c;
+
+    color: white;
+
+    padding: 12px 20px;
+
+    border-radius: 25px;
+
+    cursor: pointer;
+
+    font-family: "Poppins", sans-serif;
+}
+
+
+/* GENERAL DETAIL CARD */
+
+.detail-card,
+.story-card,
+.perspectives,
+.photos-section,
+.map-section {
+    background: rgba(255, 250, 240, 0.35);
+
+    border: 1px solid #d8c5a4;
+
+    border-radius: 24px;
+
+    padding: 28px;
+
+    margin-bottom: 22px;
+}
+
+
+/* HEADINGS */
+
+.detail-heading {
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    padding-bottom: 12px;
+
+    margin-bottom: 18px;
+
+    border-bottom: 1px solid #cdb995;
+}
+
+.detail-heading span {
+    font-size: 28px;
+}
+
+.detail-heading h2 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 31px;
+}
+
+.detail-card > p,
+.story-card > p {
+    font-family: "Playfair Display", serif;
+
+    font-size: 19px;
+
+    line-height: 1.6;
+}
+
+
+/* STORIES */
+
+.story-label {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    font-size: 12px;
+
+    letter-spacing: 1.5px;
+
+    color: #53603c;
+
+    margin-bottom: 10px;
+}
+
+.story-card h2 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 34px;
+
+    margin-bottom: 15px;
+}
+
+.fact-box,
+.belief-note {
+    margin-top: 20px;
+
+    padding: 18px;
+
+    border-radius: 15px;
+
+    background: #e8ddc7;
+}
+
+.fact-box p,
+.belief-note p {
+    margin-top: 5px;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+}
+
+
+/* CULTURAL PERSPECTIVES */
+
+.perspective-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 15px;
+}
+
+.perspective-card {
+    background: #fffaf0;
+
+    border: 1px solid #d8c5a4;
+
+    border-radius: 18px;
+
+    padding: 20px;
+
+    transition: 0.3s;
+}
+
+.perspective-card:hover {
+    transform: translateY(-4px);
+}
+
+.perspective-card > div {
+    font-size: 28px;
+
+    margin-bottom: 8px;
+}
+
+.perspective-card h3 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 20px;
+
+    margin-bottom: 8px;
+}
+
+.perspective-card p {
+    font-size: 13px;
+
+    line-height: 1.5;
+}
+
+
+/* PHOTOS */
+
+.photo-grid {
+    display: grid;
+
+    grid-template-columns: 2fr 1fr 1fr;
+
+    gap: 12px;
+}
+
+.photo-grid img {
+    width: 100%;
+    height: 230px;
+
+    object-fit: cover;
+
+    border-radius: 16px;
+}
+
+.photo-grid img:first-child {
+    height: 300px;
+}
+
+
+/* MAP */
+
+.map-placeholder {
+    min-height: 350px;
+
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            rgba(220, 211, 190, 0.85),
+            rgba(220, 211, 190, 0.85)
+        ),
+        repeating-linear-gradient(
+            45deg,
+            #d8cbb2,
+            #d8cbb2 2px,
+            #eee5d3 2px,
+            #eee5d3 25px
+        );
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+}
+
+.map-pin {
+    font-size: 45px;
+}
+
+.map-placeholder h3 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 28px;
+
+    margin: 8px;
+}
+
+.map-placeholder p {
+    margin-bottom: 20px;
+}
+
+.navigate-button {
+    background: #53603c;
+
+    color: white;
+
+    border: none;
+
+    padding: 13px 25px;
+
+    border-radius: 25px;
+
+    font-family: "Poppins", sans-serif;
+
+    cursor: pointer;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+    .place-hero {
+        height: 380px;
+    }
+
+    .place-hero-content {
+        left: 25px;
+        bottom: 25px;
+    }
+
+    .place-hero-content h2 {
+        font-size: 38px;
+    }
+
+    .quick-actions {
+        flex-wrap: wrap;
+    }
+
+    .distance {
+        width: 100%;
+    }
+
+    .perspective-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .photo-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .photo-grid img,
+    .photo-grid img:first-child {
+        height: 220px;
+    }
+
+}
+/* =========================
+   SPECIALITY / EVENTS PAGE
+========================= */
+
+.events-intro {
+    text-align: center;
+
+    max-width: 800px;
+
+    margin: 55px auto 35px;
+}
+
+.small-title {
+    color: #53603c;
+
+    font-size: 13px;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 10px;
+}
+
+.events-intro h2 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 48px;
+
+    color: #68452c;
+
+    margin-bottom: 12px;
+}
+
+.events-intro > p:last-child {
+    font-size: 17px;
+
+    line-height: 1.7;
+}
+
+
+/* DATE CARD */
+
+.date-card {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    background: #e8ddc7;
+
+    border-radius: 22px;
+
+    padding: 22px 28px;
+
+    margin-bottom: 30px;
+}
+
+.date-card > div {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+}
+
+.date-icon {
+    font-size: 30px;
+}
+
+.date-card strong {
+    font-size: 17px;
+}
+
+.date-card p {
+    margin-top: 4px;
+
+    font-size: 13px;
+}
+
+.date-card input {
+    border: 1px solid #cdb995;
+
+    background: #fffaf0;
+
+    color: #68452c;
+
+    padding: 12px 16px;
+
+    border-radius: 12px;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 14px;
+}
+
+
+/* SPECIAL EVENT */
+
+.special-event {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    overflow: hidden;
+
+    border-radius: 25px;
+
+    background: #fffaf0;
+
+    border: 1px solid #d8c5a4;
+
+    margin-bottom: 35px;
+}
+
+.event-image {
+    position: relative;
+
+    min-height: 430px;
+}
+
+.event-image img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.event-badge {
+    position: absolute;
+
+    top: 22px;
+    left: 22px;
+
+    background: #53603c;
+
+    color: white;
+
+    padding: 10px 15px;
+
+    border-radius: 20px;
+
+    font-size: 11px;
+
+    letter-spacing: 1px;
+}
+
+.event-content {
+    padding: 45px;
+}
+
+.event-label {
+    color: #53603c;
+
+    font-size: 12px;
+
+    letter-spacing: 2px;
+}
+
+.event-content h2 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 38px;
+
+    color: #68452c;
+
+    margin: 10px 0 15px;
+}
+
+.event-content > p {
+    line-height: 1.7;
+
+    font-size: 15px;
+}
+
+.event-info {
+    margin: 25px 0;
+}
+
+.event-info > div {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 13px 0;
+
+    border-bottom: 1px solid #dfceb1;
+}
+
+.event-info span {
+    font-size: 23px;
+}
+
+.event-info strong,
+.event-info small {
+    display: block;
+}
+
+.event-info small {
+    margin-top: 3px;
+
+    font-size: 12px;
+}
+
+.primary-event-button {
+    background: #53603c;
+
+    color: white;
+
+    border: none;
+
+    padding: 13px 22px;
+
+    border-radius: 25px;
+
+    font-family: "Poppins", sans-serif;
+
+    cursor: pointer;
+}
+
+
+/* RECOMMENDATIONS */
+
+.recommendations {
+    margin-bottom: 30px;
+}
+
+.section-title {
+    display: flex;
+
+    align-items: end;
+
+    justify-content: space-between;
+
+    margin-bottom: 18px;
+}
+
+.section-title > div {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+.section-title span {
+    font-size: 27px;
+}
+
+.section-title h2 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 32px;
+
+    color: #68452c;
+}
+
+.section-title p {
+    font-size: 12px;
+}
+
+
+/* RECOMMENDATION CARD */
+
+.recommendation-card {
+    display: grid;
+
+    grid-template-columns: 70px 260px 1fr;
+
+    align-items: stretch;
+
+    overflow: hidden;
+
+    background: #fffaf0;
+
+    border: 1px solid #d8c5a4;
+
+    border-radius: 20px;
+
+    margin-bottom: 18px;
+
+    min-height: 200px;
+}
+
+.rank {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 25px;
+
+    color: #53603c;
+}
+
+.recommendation-image img {
+    width: 100%;
+
+    height: 100%;
+
+    min-height: 200px;
+
+    object-fit: cover;
+}
+
+.recommendation-content {
+    padding: 25px;
+}
+
+.category {
+    font-size: 11px;
+
+    letter-spacing: 1.5px;
+
+    color: #53603c;
+}
+
+.recommendation-content h3 {
+    font-family: "Playfair Display", serif;
+
+    color: #68452c;
+
+    font-size: 27px;
+
+    margin: 7px 0;
+}
+
+.recommendation-content p {
+    font-size: 13px;
+
+    line-height: 1.5;
+
+    max-width: 650px;
+}
+
+.recommendation-bottom {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-top: 18px;
+
+    padding-top: 12px;
+
+    border-top: 1px solid #dfceb1;
+
+    font-size: 12px;
+}
+
+.recommendation-bottom a {
+    color: #53603c;
+
+    font-weight: 600;
+
+    text-decoration: none;
+}
+
+
+/* SMART RECOMMENDATION */
+
+.smart-recommendation {
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    background: #e8ddc7;
+
+    border-radius: 22px;
+
+    padding: 25px 30px;
+
+    margin-bottom: 35px;
+}
+
+.smart-icon {
+    font-size: 35px;
+}
+
+.smart-recommendation h2 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 25px;
+
+    color: #68452c;
+
+    margin-bottom: 6px;
+}
+
+.smart-recommendation p {
+    font-size: 13px;
+
+    line-height: 1.6;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+    .events-intro h2 {
+        font-size: 38px;
+    }
+
+    .date-card {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+    .date-card input {
+        width: 100%;
+    }
+
+    .special-event {
+        grid-template-columns: 1fr;
+    }
+
+    .event-image {
+        min-height: 300px;
+    }
+
+    .event-content {
+        padding: 30px;
+    }
+
+    .recommendation-card {
+        grid-template-columns: 50px 1fr;
+    }
+
+    .recommendation-image {
+        grid-column: 2;
+    }
+
+    .recommendation-image img {
+        height: 220px;
+    }
+
+    .recommendation-content {
+        grid-column: 1 / -1;
+    }
+
+    .section-title {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 8px;
+    }
+}
