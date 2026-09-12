@@ -822,10 +822,9 @@ main {
 .detail-card > p,
 .story-card > p {
     font-family: "Playfair Display", serif;
-
     font-size: 19px;
-
-    line-height: 1.6;
+    line-height: 1.7;
+    color: #4b4035;
 }
 
 

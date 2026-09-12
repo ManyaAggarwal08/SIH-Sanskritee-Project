@@ -195,9 +195,13 @@ const places = {
         category: "MONUMENT",
         description: "A beautiful monument of Mughal-era architecture in Chhatrapati Sambhajinagar.",
         about: "Bibi Ka Maqbara is one of the most recognisable monuments of Chhatrapati Sambhajinagar. Its architecture reflects the influence of Mughal design and makes it an important part of the city's historical landscape.",
+        bestTime: "October to March, especially during the cooler morning or late afternoon hours.",
+        historicalImportance: "Bibi Ka Maqbara is an important Mughal-era monument in the Deccan and forms a significant part of the historical heritage of Chhatrapati Sambhajinagar.",
+        heritageRelation: "Bibi Ka Maqbara reflects India's rich Mughal and Deccan heritage through its architecture, history and cultural significance.",
+        story: "Local traditions often connect this monument with stories of Mughal-era life and the cultural traditions of the Deccan. These traditions are part of the way the monument is remembered and experienced today.",
         photos: [
-            "https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=700&q=80",
-            "https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=700&q=80",
+            "https://images.unsplash.com/photo-159661046289-e319879846e41?auto=format&fit=crop&w=700&q=80",
+            "https://images.unsplash.com/photo-1564540759233-c60657eea523?auto=format&fit=crop&w=700&q=80",
             "https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=700&q=80"
         ],
         distance: "2.4 km",
@@ -212,6 +216,10 @@ const places = {
         category: "FORT",
         description: "A magnificent hill fort known for its powerful defenses and fascinating history.",
         about: "Daulatabad Fort is a remarkable medieval hill fortress known for its strategic location, massive defenses and fascinating history in the Deccan.",
+        bestTime: "October to March, especially in the morning or late afternoon.",
+        historicalImportance: "Daulatabad Fort is an important medieval hill fortress in the Deccan, known for its strategic location, strong defensive architecture and role in the history of the region.",
+        heritageRelation: "Daulatabad Fort represents India's medieval Deccan heritage through its architecture, strategic design and long history of changing rulers and kingdoms.",
+        story: "Local traditions and stories surrounding Daulatabad often highlight the fort's mysterious passages, powerful defenses and dramatic history. These stories add to the sense of wonder visitors experience while exploring the hill fort.",
         photos: [
             "https://images.unsplash.com/photo-1605640840605-14ac1855827b?auto=format&fit=crop&w=700&q=80",
             "https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=700&q=80",
@@ -229,6 +237,10 @@ const places = {
         category: "CAVES",
         description: "Ancient rock-cut caves famous for Buddhist paintings, sculptures and heritage.",
         about: "The Ajanta Caves are an extraordinary group of rock-cut caves known for their ancient paintings, sculptures and Buddhist heritage.",
+        bestTime: "October to March, when the weather is generally cooler and more comfortable for exploring the caves.",
+        historicalImportance: "The Ajanta Caves are an important part of India's ancient Buddhist heritage and are renowned for their rock-cut architecture, paintings and sculptures created over many centuries.",
+        heritageRelation: "The Ajanta Caves are a major part of India's Buddhist and artistic heritage, preserving ancient paintings, sculptures and rock-cut architecture.",
+        story: "The Ajanta Caves are closely connected with Buddhist traditions and stories of monks who lived and meditated in the caves. Their paintings and sculptures preserve scenes and teachings associated with Buddhist traditions.",
         photos: [
             "https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=700&q=80",
             "https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=700&q=80",
@@ -246,6 +258,10 @@ const places = {
         category: "CAVES",
         description: "A remarkable rock-cut heritage complex representing Buddhist, Hindu and Jain traditions.",
         about: "The Ellora Caves form a remarkable rock-cut heritage complex where Buddhist, Hindu and Jain traditions are represented together.",
+        bestTime: "October to March, when the weather is generally cooler for exploring the cave complex.",
+        historicalImportance: "The Ellora Caves are an important part of India's heritage, showcasing remarkable rock-cut architecture and the coexistence of Buddhist, Hindu and Jain traditions.",
+        heritageRelation: "The Ellora Caves represent India's diverse cultural heritage through the shared presence of Buddhist, Hindu and Jain traditions in one remarkable rock-cut complex.",
+        story: "Ellora is associated with traditions from Buddhism, Hinduism and Jainism. Local stories and religious traditions connected with the caves add to the cultural meaning of this remarkable rock-cut heritage site.",
         photos: [
             "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=700&q=80",
             "https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=700&q=80",
@@ -262,6 +278,10 @@ const places = {
         category: "TEMPLE",
         description: "A historic temple near the Ellora Caves, known for its cultural and religious significance.",
         about: "Grishneshwar Temple is an important heritage and pilgrimage site near the Ellora Caves. It is associated with the Jyotirlinga tradition and forms part of the cultural landscape of the Ellora region.",
+        bestTime: "October to March, with cooler weather making temple visits more comfortable.",
+        historicalImportance: "Grishneshwar Temple is an important heritage and pilgrimage site near Ellora, representing the long-standing religious and architectural traditions of the Deccan region.",
+        heritageRelation: "Grishneshwar Temple represents India's living religious and architectural heritage and reflects the long-standing traditions of Hindu pilgrimage in the Deccan.",
+        story: "According to Hindu tradition, Grishneshwar is associated with the legend of Ghushma, a devoted woman whose faith and devotion are connected with the manifestation of Lord Shiva as a Jyotirlinga. This traditional story is an important part of the temple's religious significance.",
         photos: [
             "https://images.unsplash.com/photo-1600100397608-f010a3a6f5f4?auto=format&fit=crop&w=700&q=80",
             "https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=700&q=80",
@@ -273,6 +293,106 @@ const places = {
             lng: 75.1779
         }
     },
+        aurangabadCaves: {
+        name: "Aurangabad Caves",
+        category: "CAVES",
+        description: "An ancient rock-cut cave complex known for its sculptures and Buddhist heritage.",
+        about: "Aurangabad Caves are a group of rock-cut caves located near Chhatrapati Sambhajinagar, known for their sculptures, architecture and connection with Buddhist heritage.",
+        bestTime: "October to March, when the weather is generally cooler for exploring the caves.",
+        historicalImportance: "The Aurangabad Caves are an important example of ancient Buddhist rock-cut architecture, with sculptures and monuments that reflect the artistic and religious traditions of the Deccan.",
+        heritageRelation: "The Aurangabad Caves contribute to India's Buddhist and artistic heritage through their ancient sculptures, rock-cut architecture and connection to the Deccan region.",
+        story: "The caves are connected with Buddhist traditions of meditation and monastic life. Their quiet rock-cut spaces and sculptures reflect the spiritual traditions that developed in the Deccan.",
+        photos: [
+            "https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=700&q=80",
+            "https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=700&q=80",
+            "https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e?auto=format&fit=crop&w=700&q=80"
+        ],
+        distance: "5 km",
+        coordinates: {
+            lat: 19.8912,
+            lng: 75.3222
+        }
+    },
+        panchakki: {
+        name: "Panchakki",
+        category: "MONUMENT",
+        description: "A historic water mill known for its ingenious engineering and peaceful surroundings.",
+        about: "Panchakki is a historic water mill in Chhatrapati Sambhajinagar, showcasing the remarkable water-management and engineering techniques of its time.",
+        bestTime: "October to March, when the weather is generally cooler and pleasant for exploring the site.",
+        historicalImportance: "Panchakki is an important example of historical water-management and engineering in Chhatrapati Sambhajinagar, reflecting the ingenuity of the region's past.",
+        heritageRelation: "Panchakki reflects India's engineering and architectural heritage through its historic water-management system and the ingenuity of the Deccan region.",
+        story: "Local traditions remember Panchakki as a remarkable example of water-powered engineering. Stories surrounding the site often highlight the ingenuity used to bring water from a distant source and power the historic mill.",
+        photos: [
+            "YOUR_PHOTO_1",
+            "YOUR_PHOTO_2",
+            "YOUR_PHOTO_3"
+        ],
+        distance: "3 km",
+        coordinates: {
+            lat: 19.8876,
+            lng: 75.3206
+        }
+    },
+        gates: {
+        name: "52 Historic Gates of Chhatrapati Sambhajinagar",
+        category: "MONUMENT",
+        description: "A remarkable network of historic gates that reflects the city's medieval architecture and urban heritage.",
+        about: "The historic gates of Chhatrapati Sambhajinagar are an important part of the city's architectural identity and tell the story of its historic development.",
+        bestTime: "October to March, when the weather is generally cooler for exploring the historic city.",
+        historicalImportance: "The historic gates of Chhatrapati Sambhajinagar are an important part of the city's medieval heritage, reflecting its historic fortifications, urban planning and architectural character.",
+        heritageRelation: "The historic gates preserve an important part of India's urban and architectural heritage, showing how medieval cities were protected and organised.",
+        story: "Local stories surrounding the historic gates preserve memories of the old walled city and the life that once passed through these entrances. These traditions help connect the gates with the city's changing cultural landscape.",
+        photos: [
+            "YOUR_PHOTO_1",
+            "YOUR_PHOTO_2",
+            "YOUR_PHOTO_3"
+        ],
+        distance: "4 km",
+        coordinates: {
+            lat: 19.8762,
+            lng: 75.3433
+        }
+    },
+        aurangzebTomb: {
+        name: "Aurangzeb's Tomb",
+        category: "MONUMENT",
+        description: "A simple historic tomb associated with the last major Mughal emperor.",
+        about: "Aurangzeb's Tomb is located at Khuldabad near Chhatrapati Sambhajinagar and is known for its simple design and historical association with the Mughal period.",
+        bestTime: "October to March, when the weather is generally cooler for exploring Khuldabad.",
+        historicalImportance: "Aurangzeb's Tomb is an important historical site associated with the Mughal period in the Deccan and forms part of the region's rich historical heritage.",
+        heritageRelation: "Aurangzeb's Tomb forms part of India's Mughal and Deccan heritage, reflecting the historical connections between the Mughal Empire and the region.",
+        story: "The tomb is traditionally remembered for its simplicity and connection with Aurangzeb's personal wishes. Its modest appearance is often contrasted with the grand architecture associated with the Mughal period.",
+        photos: [
+            "YOUR_PHOTO_1",
+            "YOUR_PHOTO_2",
+            "YOUR_PHOTO_3"
+        ],
+        distance: "25 km",
+        coordinates: {
+            lat: 20.0064,
+            lng: 75.1781
+        }
+    },
+        soneriMahal: {
+        name: "Soneri Mahal",
+        category: "MONUMENT",
+        description: "A historic palace known for its architecture and connection with the cultural heritage of the region.",
+        about: "Soneri Mahal is a historic palace in Chhatrapati Sambhajinagar that reflects the architectural and cultural heritage of the region.",
+        bestTime: "October to March, when the weather is generally cooler and pleasant for exploring the palace.",
+        historicalImportance: "Soneri Mahal is an important historic palace that reflects the architectural and cultural heritage of the Deccan region and the history of Chhatrapati Sambhajinagar.",
+        heritageRelation: "Soneri Mahal contributes to India's architectural and cultural heritage by preserving the history and artistic traditions of the Deccan region.",
+        story: "Local traditions surrounding Soneri Mahal connect the palace with the artistic and cultural life of the Deccan. Stories about its historic grandeur help preserve memories of the people and traditions associated with the palace.",
+        photos: [
+            "YOUR_PHOTO_1",
+            "YOUR_PHOTO_2",
+            "YOUR_PHOTO_3"
+        ],
+        distance: "4 km",
+        coordinates: {
+            lat: 19.8801,
+            lng: 75.3347
+        }
+    },
 };
 
 if (selectedPlace && places[selectedPlace]) {
@@ -282,6 +402,10 @@ if (selectedPlace && places[selectedPlace]) {
     placeCategory.textContent = places[selectedPlace].category;
     placeDescription.textContent = places[selectedPlace].description;
     document.getElementById("placeAbout").textContent = places[selectedPlace].about;
+    document.getElementById("placeBestTime").textContent = places[selectedPlace].bestTime;
+    document.getElementById("placeHistorical").textContent =  places[selectedPlace].historicalImportance;
+    document.getElementById("placeHeritage").textContent = places[selectedPlace].heritageRelation;
+    document.getElementById("placeStory").textContent = places[selectedPlace].story;
     document.getElementById("placePhoto1").src = places[selectedPlace].photos[0];
     document.getElementById("placePhoto2").src = places[selectedPlace].photos[1];
     document.getElementById("placePhoto3").src = places[selectedPlace].photos[2];
