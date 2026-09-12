@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Bibi Ka Maqbara - Sanskriti</title>
+    <title>Bibi Ka Maqbara - Sanskritee</title>
 
     <link rel="stylesheet" href="style.css">
 
@@ -34,7 +34,7 @@
 
             <h1>Namaste</h1>
 
-            <p>Welcome to Sanskriti</p>
+            <p>Welcome to Sanskritee</p>
 
         </div>
 
@@ -89,11 +89,11 @@
 
             <div class="place-hero-content">
 
-                <span>MONUMENT</span>
+                <span id="placeCategory">MONUMENT</span>
 
-                <h2>Bibi Ka Maqbara</h2>
+                <h2 id="placeName">Bibi Ka Maqbara</h2>
 
-                <p>
+                <p id="placeDescription">
                     A beautiful monument of Mughal-era architecture
                     in Chhatrapati Sambhajinagar.
                 </p>
@@ -112,7 +112,7 @@
                 <span>📍</span>
 
                 <div>
-                    <strong>2.4 km</strong>
+                    <strong id="placeDistance">2.4 km</strong>
                     <small>from your location</small>
                 </div>
 
@@ -143,7 +143,7 @@
 
             </div>
 
-            <p>
+            <p id="placeAbout">
                 Bibi Ka Maqbara is one of the most recognisable monuments
                 of Chhatrapati Sambhajinagar. Its architecture reflects
                 the influence of Mughal design and makes it an important
@@ -309,16 +309,19 @@
             <div class="photo-grid">
 
                 <img
+                    id="placePhoto1"
                     src="https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=700&q=80"
                     alt="Bibi Ka Maqbara view"
                 >
 
                 <img
+                    id="placePhoto2"
                     src="https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=700&q=80"
                     alt="Heritage architecture"
                 >
 
                 <img
+                    id="placePhoto3"
                     src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=700&q=80"
                     alt="Indian heritage"
                 >
@@ -347,13 +350,13 @@
                     📍
                 </div>
 
-                <h3>Bibi Ka Maqbara</h3>
+                <h3 id="locationPlaceName">Bibi Ka Maqbara</h3>
 
                 <p>
                     Chhatrapati Sambhajinagar, Maharashtra
                 </p>
 
-                <button class="navigate-button">
+                <button id="navigateButton" class="navigate-button">
                     🧭 Navigate to this place
                 </button>
 
@@ -382,7 +385,7 @@
         </div>
 
     </footer>
-
+<script src="script.js"></script>
 
 </body>
 

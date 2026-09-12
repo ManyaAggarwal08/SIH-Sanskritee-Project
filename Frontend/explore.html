@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Explore - Sanskriti</title>
+    <title>Explore - Sanskritee</title>
 
     <link rel="stylesheet" href="style.css">
 
@@ -32,7 +32,7 @@
 
             <h1>Namaste</h1>
 
-            <p>Welcome to Sanskriti</p>
+            <p>Welcome to Sanskritee</p>
         </div>
 
         <div class="monument-icon">
@@ -90,6 +90,7 @@
 
             <input
                 type="text"
+                id="searchInput"
                 placeholder="Search heritage places..."
             >
 
@@ -100,29 +101,173 @@
 
         <div class="filters">
 
-            <button class="filter active-filter">
+            <button class="filter active-filter" data-category="all">
                 All
             </button>
 
-            <button class="filter">
+            <button class="filter" data-category="monument">
                 Monuments
             </button>
-
-            <button class="filter">
+            <button class="filter" data-category="caves">
                 Caves
             </button>
-
-            <button class="filter">
+            <button class="filter" data-category="fort">
                 Forts
             </button>
-
-            <button class="filter">
+            <button class="filter" data-category="temple">
                 Temples
             </button>
 
         </div>
+        <!-- PLACES SECTION -->
 
+        <section class="places-section">
 
+            <div class="section-heading">
+            <h2>Places to Discover</h2>
+            <span>Nearby</span>
+        </div>
+
+        <div class="places-grid">
+         <!-- PLACE 1 -->
+
+<article class="place-card" data-category="monument">
+
+    <img
+        src="https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=700&q=80"
+        alt="Bibi Ka Maqbara"
+    >
+
+    <div class="place-info">
+
+        <span class="category">
+            Monument
+        </span>
+
+        <h3>Bibi Ka Maqbara</h3>
+
+        <p>
+            A magnificent monument known for its Mughal architecture.
+        </p>
+
+        <div class="place-bottom">
+
+            <span>📍 2.4 km away</span>
+
+            <a href="place.html?place=bibi">
+                Explore →
+            </a>
+
+        </div>
+
+    </div>
+
+</article>
+<!-- PLACE 2 -->
+
+<article class="place-card" data-category="fort">
+
+    <img
+        src="https://images.unsplash.com/photo-1605640840605-14ac1855827b?auto=format&fit=crop&w=700&q=80"
+        alt="Daulatabad Fort"
+    >
+
+    <div class="place-info">
+
+        <span class="category">
+            Fort
+        </span>
+
+        <h3>Daulatabad Fort</h3>
+
+        <p>
+            A historic hill fort famous for its unique defensive architecture.
+        </p>
+
+        <div class="place-bottom">
+
+            <span>📍 15 km away</span>
+
+            <a href="place.html?place=daulatabad">
+                Explore →
+            </a>
+
+        </div>
+
+    </div>
+
+</article>
+<!-- PLACE 3 -->
+
+<article class="place-card" data-category="caves">
+
+    <img
+        src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=700&q=80"
+        alt="Ajanta Caves"
+    >
+
+    <div class="place-info">
+
+        <span class="category">
+            Caves
+        </span>
+
+        <h3>Ajanta Caves</h3>
+
+        <p>
+            Ancient rock-cut caves famous for paintings and Buddhist heritage.
+        </p>
+
+        <div class="place-bottom">
+
+            <span>📍 100 km away</span>
+
+            <a href="place.html?place=ajanta">
+                Explore →
+            </a>
+
+        </div>
+
+    </div>
+
+</article>
+<!-- PLACE 4 -->
+
+<article class="place-card" data-category="caves">
+
+    <img
+        src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=700&q=80"
+        alt="Ellora Caves"
+    >
+
+    <div class="place-info">
+
+        <span class="category">
+            Caves
+        </span>
+
+        <h3>Ellora Caves</h3>
+
+        <p>
+            A remarkable heritage complex representing multiple traditions.
+        </p>
+
+        <div class="place-bottom">
+
+            <span>📍 30 km away</span>
+
+            <a href="place.html?place=ellora">
+                Explore →
+            </a>
+
+        </div>
+
+    </div>
+
+</article>
+    </div>
+
+</section>
         <!-- LOCATION -->
 
         <div class="location-bar">
@@ -131,183 +276,34 @@
 
             <div>
                 <strong>Your location</strong>
-                <p>Finding heritage places near you</p>
+                <p id="locationStatus">Finding heritage places near you</p>
             </div>
 
-            <button>
-                Use my location
+            <button id="locationBtn">
+                  Use my location
             </button>
 
         </div>
+    <div class="trip-planner-banner">
 
+    <div>
+        <span>🧭 PLAN YOUR JOURNEY</span>
 
-        <!-- PLACES -->
+        <h2>
+            Not sure where to start?
+        </h2>
 
-        <section class="places-section">
+        <p>
+            Tell us your dates and interests.
+            We'll create a heritage journey for you.
+        </p>
+    </div>
 
-            <div class="places-title">
+    <a href="trip.html" class="generate-btn">
+        Plan My Trip →
+    </a>
 
-                <h2>Places to Discover</h2>
-
-                <span>Nearby</span>
-
-            </div>
-
-
-            <div class="places-grid">
-
-
-                <!-- PLACE 1 -->
-
-                <article class="place-card">
-
-                    <img
-                        src="https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=700&q=80"
-                        alt="Bibi Ka Maqbara"
-                    >
-
-                    <div class="place-info">
-
-                        <span class="category">
-                            Monument
-                        </span>
-
-                        <h3>Bibi Ka Maqbara</h3>
-
-                        <p>
-                            A magnificent monument known
-                            for its Mughal architecture.
-                        </p>
-
-                        <div class="place-bottom">
-
-                            <span>📍 2.4 km away</span>
-
-                            <a href="#">
-                                Explore →
-                            </a>
-
-                        </div>
-
-                    </div>
-
-                </article>
-
-
-                <!-- PLACE 2 -->
-
-                <article class="place-card">
-
-                    <img
-                        src="https://images.unsplash.com/photo-1600100397608-f0101b6b2d1d?auto=format&fit=crop&w=700&q=80"
-                        alt="Daulatabad Fort"
-                    >
-
-                    <div class="place-info">
-
-                        <span class="category">
-                            Fort
-                        </span>
-
-                        <h3>Daulatabad Fort</h3>
-
-                        <p>
-                            A historic hill fort famous for
-                            its unique defensive architecture.
-                        </p>
-
-                        <div class="place-bottom">
-
-                            <span>📍 15 km away</span>
-
-                            <a href="#">
-                                Explore →
-                            </a>
-
-                        </div>
-
-                    </div>
-
-                </article>
-
-
-                <!-- PLACE 3 -->
-
-                <article class="place-card">
-
-                    <img
-                        src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=700&q=80"
-                        alt="Ajanta Caves"
-                    >
-
-                    <div class="place-info">
-
-                        <span class="category">
-                            Caves
-                        </span>
-
-                        <h3>Ajanta Caves</h3>
-
-                        <p>
-                            Ancient rock-cut caves famous for
-                            paintings and Buddhist heritage.
-                        </p>
-
-                        <div class="place-bottom">
-
-                            <span>📍 100 km away</span>
-
-                            <a href="#">
-                                Explore →
-                            </a>
-
-                        </div>
-
-                    </div>
-
-                </article>
-
-
-                <!-- PLACE 4 -->
-
-                <article class="place-card">
-
-                    <img
-                        src="https://images.unsplash.com/photo-1598091383021-15ddea10925d?auto=format&fit=crop&w=700&q=80"
-                        alt="Ellora Caves"
-                    >
-
-                    <div class="place-info">
-
-                        <span class="category">
-                            Caves
-                        </span>
-
-                        <h3>Ellora Caves</h3>
-
-                        <p>
-                            A remarkable heritage complex
-                            representing multiple traditions.
-                        </p>
-
-                        <div class="place-bottom">
-
-                            <span>📍 30 km away</span>
-
-                            <a href="#">
-                                Explore →
-                            </a>
-
-                        </div>
-
-                    </div>
-
-                </article>
-
-            </div>
-
-        </section>
-
+    </div>
     </main>
 
 
@@ -328,7 +324,7 @@
         </div>
 
     </footer>
-
+    <script src="script.js"></script>
 </body>
 
 </html>

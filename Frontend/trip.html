@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Trip - Sanskritee</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="top-section">
+
+        <div class="menu">☰</div>
+
+        <div class="brand">
+            <div class="star">✧</div>
+            <h1>Namaste</h1>
+            <p>Welcome to Sanskritee</p>
+        </div>
+
+        <div class="temple">🏛️</div>
+
+    </header>
+
+
+    <nav class="main-nav">
+
+        <a href="index.html">🏠 Home</a>
+
+        <a href="events.html">☆ Speciality of Day</a>
+
+        <a href="explore.html">◇ Explore</a>
+
+    </nav>
+
+
+    <main class="trip-container">
+
+        <p class="eyebrow">PLAN YOUR JOURNEY</p>
+
+        <h2>My Trip</h2>
+
+        <p class="trip-intro">
+            Tell us about your trip and we'll help you discover
+            the heritage of Chhatrapati Sambhajinagar.
+        </p>
+
+
+        <section class="trip-card">
+
+            <h3>📅 When are you visiting?</h3>
+
+            <label>Visit date</label>
+            <input type="date" id="visitDate">
+
+
+            <label>Number of days</label>
+
+            <select id="days">
+
+                <option value="1">1 Day</option>
+                <option value="2">2 Days</option>
+                <option value="3">3 Days</option>
+
+            </select>
+
+
+            <h3>✨ What interests you?</h3>
+
+            <div class="interest-options">
+
+                <button type="button" class="interest active" data-interest="monuments">
+                    🏛️ Monuments
+                </button>
+
+                <button type="button" class="interest" data-interest="temples">
+                    🛕 Temples
+                </button>
+
+                <button type="button" class="interest" data-interest="caves">
+                    🪨 Caves
+                </button>
+
+                <button type="button" class="interest" data-interest="forts">
+                    🏰 Forts
+                </button>
+
+                <button type="button" class="interest" data-interest="history">
+                    📖 History
+                </button>
+
+                <button type="button" class="interest" data-interest="nature">
+                    🌿 Nature
+                </button>
+
+            </div>
+
+
+            <h3>📍 Starting location</h3>
+
+            <div class="location-box">
+
+                <span>📍</span>
+
+                <div>
+                    <strong>Your current location</strong>
+                    <p id="locationStatus">
+                        Location will be used to plan nearby places.
+                    </p>
+                </div>
+
+                <button type="button" onclick="getLocation()">
+                    Use my location
+                </button>
+
+            </div>
+
+
+            <button class="generate-btn" onclick="generateTrip()">
+                Generate My Trip →
+            </button>
+            <div id="tripResult"></div>
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
