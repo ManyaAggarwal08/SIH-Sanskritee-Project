@@ -1,0 +1,2923 @@
+/* =========================
+   BASIC SETUP
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f4ead7;
+    color: #5a3b24;
+    font-family: "Poppins", sans-serif;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    min-height: 180px;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 30px 50px;
+}
+
+
+/* Hamburger */
+
+.menu-icon {
+    position: absolute;
+    left: 50px;
+    top: 60px;
+
+    width: 42px;
+    cursor: pointer;
+}
+
+.menu-icon span {
+    display: block;
+    height: 3px;
+    background: #68452c;
+    margin-bottom: 8px;
+    border-radius: 5px;
+}
+
+
+/* Logo */
+
+.logo {
+    text-align: center;
+}
+
+.lotus {
+    font-size: 35px;
+    margin-bottom: -5px;
+}
+
+.logo h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 58px;
+    font-weight: 500;
+}
+
+.logo p {
+    font-family: "Playfair Display", serif;
+    font-size: 22px;
+    margin-top: 5px;
+}
+
+
+/* Monument */
+
+.monument-icon {
+    position: absolute;
+    right: 50px;
+    top: 60px;
+
+    font-size: 55px;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+
+    padding: 0 30px 25px;
+}
+
+.nav-button {
+    min-width: 270px;
+
+    padding: 13px 25px;
+
+    border: 1px solid #cdb995;
+    border-radius: 35px;
+
+    text-decoration: none;
+    color: #68452c;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
+        
+    transition: 0.3s;
+}
+
+.nav-button:hover {
+    background: #e8dbc2;
+}
+
+.nav-button.active {
+    background: #53603c;
+    color: white;
+    border-color: #53603c;
+}
+
+
+/* =========================
+   MAIN
+========================= */
+
+main {
+    max-width: 1250px;
+    margin: auto;
+    padding: 0 30px;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    height: 480px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: 25px;
+
+    margin-bottom: 25px;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(
+        90deg,
+        rgba(40, 25, 15, 0.45),
+        transparent 65%
+    );
+}
+
+.hero-text {
+    position: absolute;
+    left: 45px;
+    top: 45px;
+
+    color: white;
+}
+
+.hero-text p {
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.hero-text h2 {
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    font-size: 42px;
+    font-weight: 400;
+    line-height: 1.1;
+}
+
+
+/* =========================
+   INFORMATION CARDS
+========================= */
+
+.info-card {
+    border: 1px solid #d8c5a4;
+    border-radius: 25px;
+
+    padding: 25px;
+
+    margin-bottom: 20px;
+
+    background: rgba(255, 250, 240, 0.25);
+}
+
+
+/* Section heading */
+
+.section-title {
+    display: flex;
+    align-items: center;
+
+    gap: 18px;
+
+    border-bottom: 1px solid #cdb995;
+
+    padding-bottom: 10px;
+
+    margin-bottom: 20px;
+}
+
+.section-title h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.section-icon {
+    font-size: 35px;
+}
+
+
+/* Content */
+
+.info-content {
+    display: flex;
+    align-items: center;
+
+    gap: 30px;
+}
+
+.info-content img {
+    width: 300px;
+    height: 180px;
+
+    object-fit: cover;
+
+    border-radius: 18px;
+}
+
+.info-content p {
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
+
+    line-height: 1.45;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    max-width: 1250px;
+
+    margin: auto;
+
+    padding: 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    font-size: 18px;
+}
+
+.footer-message {
+    display: flex;
+    flex-direction: column;
+
+    border-left: 2px solid #a98c64;
+
+    padding-left: 20px;
+}
+
+.footer-message strong {
+    font-weight: 400;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 800px) {
+
+    .header {
+        min-height: 150px;
+    }
+
+    .logo h1 {
+        font-size: 42px;
+    }
+
+    .logo p {
+        font-size: 16px;
+    }
+
+    .menu-icon {
+        left: 20px;
+        top: 45px;
+    }
+
+    .monument-icon {
+        right: 20px;
+        top: 45px;
+        font-size: 35px;
+    }
+
+    .navigation {
+        gap: 8px;
+    }
+
+    .nav-button {
+        min-width: auto;
+        flex: 1;
+
+        font-size: 14px;
+        padding: 12px 8px;
+    }
+
+    .hero {
+        height: 350px;
+    }
+
+    .hero-text {
+        left: 25px;
+        top: 30px;
+    }
+
+    .hero-text h2 {
+        font-size: 30px;
+    }
+
+    .info-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .info-content img {
+        width: 100%;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+}
+/* =========================
+   EXPLORE PAGE
+========================= */
+
+.explore-heading {
+    text-align: center;
+    padding: 35px 20px 20px;
+}
+
+.explore-heading p:first-child {
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.explore-heading h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 40px;
+    font-weight: 500;
+    margin: 8px 0;
+}
+
+.explore-description {
+    max-width: 650px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+
+/* SEARCH */
+
+.search-box {
+    max-width: 700px;
+    margin: 20px auto;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    background: #fffaf0;
+
+    border: 1px solid #d4c09c;
+    border-radius: 30px;
+
+    padding: 14px 20px;
+}
+
+.search-box span {
+    font-size: 20px;
+}
+
+.search-box input {
+    width: 100%;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+}
+
+
+/* FILTERS */
+
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+
+    flex-wrap: wrap;
+
+    margin: 20px 0 30px;
+}
+
+.filter {
+    border: 1px solid #cdb995;
+    background: transparent;
+
+    color: #68452c;
+
+    padding: 10px 22px;
+
+    border-radius: 25px;
+
+    font-family: "Poppins", sans-serif;
+
+    cursor: pointer;
+}
+
+.active-filter {
+    background: #53603c;
+    color: white;
+}
+
+
+/* LOCATION BAR */
+
+.location-bar {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    background: #e8ddc7;
+
+    border-radius: 18px;
+
+    padding: 18px 22px;
+
+    margin-bottom: 35px;
+}
+
+.location-bar > span {
+    font-size: 25px;
+}
+
+.location-bar p {
+    font-size: 13px;
+    margin-top: 3px;
+}
+
+.location-bar button {
+    margin-left: auto;
+
+    border: none;
+
+    background: #53603c;
+    color: white;
+
+    padding: 11px 18px;
+
+    border-radius: 20px;
+
+    cursor: pointer;
+}
+
+
+/* PLACES */
+
+.places-section {
+    padding-bottom: 40px;
+}
+
+.places-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 20px;
+}
+
+.places-title h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 30px;
+}
+
+.places-title span {
+    font-size: 14px;
+}
+
+
+/* GRID */
+
+.places-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+}
+
+
+/* PLACE CARD */
+
+.place-card {
+    background: #fffaf0;
+
+    border: 1px solid #d8c5a4;
+
+    border-radius: 22px;
+
+    overflow: hidden;
+
+    transition: 0.3s;
+}
+
+.place-card:hover {
+    transform: translateY(-5px);
+}
+
+.place-card > img {
+    width: 100%;
+    height: 230px;
+
+    object-fit: cover;
+}
+
+.place-info {
+    padding: 20px;
+}
+
+.category {
+    display: inline-block;
+
+    background: #e7dcc5;
+
+    padding: 5px 12px;
+
+    border-radius: 15px;
+
+    font-size: 12px;
+}
+
+.place-info h3 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 26px;
+
+    margin: 10px 0;
+}
+
+.place-info p {
+    font-size: 14px;
+
+    line-height: 1.5;
+
+    margin-bottom: 18px;
+}
+
+.place-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-top: 1px solid #ded0b5;
+
+    padding-top: 15px;
+
+    font-size: 13px;
+}
+
+.place-bottom a {
+    color: #53603c;
+
+    font-weight: 600;
+
+    text-decoration: none;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+    .explore-heading h2 {
+        font-size: 30px;
+    }
+
+    .location-bar {
+        flex-wrap: wrap;
+    }
+
+    .location-bar button {
+        margin-left: 0;
+    }
+
+    .places-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+/* =========================
+   PLACE DETAILS PAGE
+========================= */
+
+.back-button {
+    display: inline-block;
+
+    margin: 20px 0;
+
+    color: #68452c;
+
+    text-decoration: none;
+
+    font-size: 15px;
+}
+
+
+/* PLACE HERO */
+
+.place-hero {
+    height: 470px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: 25px;
+
+    margin-bottom: 20px;
+}
+
+.place-hero img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.place-hero-overlay {
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(
+        transparent 25%,
+        rgba(40, 25, 15, 0.8)
+    );
+}
+
+.place-hero-content {
+    position: absolute;
+
+    bottom: 40px;
+    left: 45px;
+
+    color: white;
+
+    max-width: 700px;
+}
+
+.place-hero-content span {
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+.place-hero-content h2 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 52px;
+
+    margin: 5px 0;
+}
+
+.place-hero-content p {
+    font-size: 16px;
+}
+
+
+/* QUICK ACTIONS */
+
+.quick-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    margin-bottom: 25px;
+
+    padding: 18px;
+
+    background: #e8ddc7;
+
+    border-radius: 20px;
+}
+
+.distance {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    margin-right: auto;
+}
+
+.distance > span {
+    font-size: 25px;
+}
+
+.distance strong {
+    display: block;
+    font-size: 18px;
+}
+
+.distance small {
+    display: block;
+    font-size: 12px;
+}
+
+.action-button {
+    border: 1px solid #53603c;
+
+    background: #53603c;
+
+    color: white;
+
+    padding: 12px 20px;
+
+    border-radius: 25px;
+
+    cursor: pointer;
+
+    font-family: "Poppins", sans-serif;
+}
+
+
+/* GENERAL DETAIL CARD */
+
+.detail-card,
+.story-card,
+.perspectives,
+.photos-section,
+.map-section {
+    background: rgba(255, 250, 240, 0.35);
+
+    border: 1px solid #d8c5a4;
+
+    border-radius: 24px;
+
+    padding: 28px;
+
+    margin-bottom: 22px;
+}
+
+
+/* HEADINGS */
+
+.detail-heading {
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    padding-bottom: 12px;
+
+    margin-bottom: 18px;
+
+    border-bottom: 1px solid #cdb995;
+}
+
+.detail-heading span {
+    font-size: 28px;
+}
+
+.detail-heading h2 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 31px;
+}
+
+.detail-card > p,
+.story-card > p {
+    font-family: "Playfair Display", serif;
+    font-size: 19px;
+    line-height: 1.7;
+    color: #4b4035;
+}
+
+
+/* STORIES */
+
+.story-label {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    font-size: 12px;
+
+    letter-spacing: 1.5px;
+
+    color: #53603c;
+
+    margin-bottom: 10px;
+}
+
+.story-card h2 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 34px;
+
+    margin-bottom: 15px;
+}
+
+.fact-box,
+.belief-note {
+    margin-top: 20px;
+
+    padding: 18px;
+
+    border-radius: 15px;
+
+    background: #e8ddc7;
+}
+
+.fact-box p,
+.belief-note p {
+    margin-top: 5px;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+}
+
+
+/* CULTURAL PERSPECTIVES */
+
+.perspective-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 15px;
+}
+
+.perspective-card {
+    background: #fffaf0;
+
+    border: 1px solid #d8c5a4;
+
+    border-radius: 18px;
+
+    padding: 20px;
+
+    transition: 0.3s;
+}
+
+.perspective-card:hover {
+    transform: translateY(-4px);
+}
+
+.perspective-card > div {
+    font-size: 28px;
+
+    margin-bottom: 8px;
+}
+
+.perspective-card h3 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 20px;
+
+    margin-bottom: 8px;
+}
+
+.perspective-card p {
+    font-size: 13px;
+
+    line-height: 1.5;
+}
+
+
+/* PHOTOS */
+
+.photo-grid {
+    display: grid;
+
+    grid-template-columns: 2fr 1fr 1fr;
+
+    gap: 12px;
+}
+
+.photo-grid img {
+    width: 100%;
+    height: 230px;
+
+    object-fit: cover;
+
+    border-radius: 16px;
+}
+
+.photo-grid img:first-child {
+    height: 300px;
+}
+
+
+/* MAP */
+
+.map-placeholder {
+    min-height: 350px;
+
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            rgba(220, 211, 190, 0.85),
+            rgba(220, 211, 190, 0.85)
+        ),
+        repeating-linear-gradient(
+            45deg,
+            #d8cbb2,
+            #d8cbb2 2px,
+            #eee5d3 2px,
+            #eee5d3 25px
+        );
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+}
+
+.map-pin {
+    font-size: 45px;
+}
+
+.map-placeholder h3 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 28px;
+
+    margin: 8px;
+}
+
+.map-placeholder p {
+    margin-bottom: 20px;
+}
+
+.navigate-button {
+    background: #53603c;
+
+    color: white;
+
+    border: none;
+
+    padding: 13px 25px;
+
+    border-radius: 25px;
+
+    font-family: "Poppins", sans-serif;
+
+    cursor: pointer;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+    .place-hero {
+        height: 380px;
+    }
+
+    .place-hero-content {
+        left: 25px;
+        bottom: 25px;
+    }
+
+    .place-hero-content h2 {
+        font-size: 38px;
+    }
+
+    .quick-actions {
+        flex-wrap: wrap;
+    }
+
+    .distance {
+        width: 100%;
+    }
+
+    .perspective-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .photo-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .photo-grid img,
+    .photo-grid img:first-child {
+        height: 220px;
+    }
+
+}
+/* =========================
+   SPECIALITY / EVENTS PAGE
+========================= */
+
+.events-intro {
+    text-align: center;
+
+    max-width: 800px;
+
+    margin: 55px auto 35px;
+}
+
+.small-title {
+    color: #53603c;
+
+    font-size: 13px;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 10px;
+}
+
+.events-intro h2 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 48px;
+
+    color: #68452c;
+
+    margin-bottom: 12px;
+}
+
+.events-intro > p:last-child {
+    font-size: 17px;
+
+    line-height: 1.7;
+}
+
+
+/* DATE CARD */
+
+.date-card {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    background: #e8ddc7;
+
+    border-radius: 22px;
+
+    padding: 22px 28px;
+
+    margin-bottom: 30px;
+}
+
+.date-card > div {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+}
+
+.date-icon {
+    font-size: 30px;
+}
+
+.date-card strong {
+    font-size: 17px;
+}
+
+.date-card p {
+    margin-top: 4px;
+
+    font-size: 13px;
+}
+
+.date-card input {
+    border: 1px solid #cdb995;
+
+    background: #fffaf0;
+
+    color: #68452c;
+
+    padding: 12px 16px;
+
+    border-radius: 12px;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 14px;
+}
+
+
+/* SPECIAL EVENT */
+
+.special-event {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    overflow: hidden;
+
+    border-radius: 25px;
+
+    background: #fffaf0;
+
+    border: 1px solid #d8c5a4;
+
+    margin-bottom: 35px;
+}
+
+.event-image {
+    position: relative;
+
+    min-height: 430px;
+}
+
+.event-image img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.event-badge {
+    position: absolute;
+
+    top: 22px;
+    left: 22px;
+
+    background: #53603c;
+
+    color: white;
+
+    padding: 10px 15px;
+
+    border-radius: 20px;
+
+    font-size: 11px;
+
+    letter-spacing: 1px;
+}
+
+.event-content {
+    padding: 45px;
+}
+
+.event-label {
+    color: #53603c;
+
+    font-size: 12px;
+
+    letter-spacing: 2px;
+}
+
+.event-content h2 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 38px;
+
+    color: #68452c;
+
+    margin: 10px 0 15px;
+}
+
+.event-content > p {
+    line-height: 1.7;
+
+    font-size: 15px;
+}
+
+.event-info {
+    margin: 25px 0;
+}
+
+.event-info > div {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 13px 0;
+
+    border-bottom: 1px solid #dfceb1;
+}
+
+.event-info span {
+    font-size: 23px;
+}
+
+.event-info strong,
+.event-info small {
+    display: block;
+}
+
+.event-info small {
+    margin-top: 3px;
+
+    font-size: 12px;
+}
+
+.primary-event-button {
+    background: #53603c;
+
+    color: white;
+
+    border: none;
+
+    padding: 13px 22px;
+
+    border-radius: 25px;
+
+    font-family: "Poppins", sans-serif;
+
+    cursor: pointer;
+}
+
+
+/* RECOMMENDATIONS */
+
+.recommendations {
+    margin-bottom: 30px;
+}
+
+.section-title {
+    display: flex;
+
+    align-items: end;
+
+    justify-content: space-between;
+
+    margin-bottom: 18px;
+}
+
+.section-title > div {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+.section-title span {
+    font-size: 27px;
+}
+
+.section-title h2 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 32px;
+
+    color: #68452c;
+}
+
+.section-title p {
+    font-size: 12px;
+}
+
+
+/* RECOMMENDATION CARD */
+
+.recommendation-card {
+    display: grid;
+
+    grid-template-columns: 70px 260px 1fr;
+
+    align-items: stretch;
+
+    overflow: hidden;
+
+    background: #fffaf0;
+
+    border: 1px solid #d8c5a4;
+
+    border-radius: 20px;
+
+    margin-bottom: 18px;
+
+    min-height: 200px;
+}
+
+.rank {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 25px;
+
+    color: #53603c;
+}
+
+.recommendation-image img {
+    width: 100%;
+
+    height: 100%;
+
+    min-height: 200px;
+
+    object-fit: cover;
+}
+
+.recommendation-content {
+    padding: 25px;
+}
+
+.category {
+    font-size: 11px;
+
+    letter-spacing: 1.5px;
+
+    color: #53603c;
+}
+
+.recommendation-content h3 {
+    font-family: "Playfair Display", serif;
+
+    color: #68452c;
+
+    font-size: 27px;
+
+    margin: 7px 0;
+}
+
+.recommendation-content p {
+    font-size: 13px;
+
+    line-height: 1.5;
+
+    max-width: 650px;
+}
+
+.recommendation-bottom {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-top: 18px;
+
+    padding-top: 12px;
+
+    border-top: 1px solid #dfceb1;
+
+    font-size: 12px;
+}
+
+.recommendation-bottom a {
+    color: #53603c;
+
+    font-weight: 600;
+
+    text-decoration: none;
+}
+
+
+/* SMART RECOMMENDATION */
+
+.smart-recommendation {
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    background: #e8ddc7;
+
+    border-radius: 22px;
+
+    padding: 25px 30px;
+
+    margin-bottom: 35px;
+}
+
+.smart-icon {
+    font-size: 35px;
+}
+
+.smart-recommendation h2 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 25px;
+
+    color: #68452c;
+
+    margin-bottom: 6px;
+}
+
+.smart-recommendation p {
+    font-size: 13px;
+
+    line-height: 1.6;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+    .events-intro h2 {
+        font-size: 38px;
+    }
+
+    .date-card {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+    .date-card input {
+        width: 100%;
+    }
+
+    .special-event {
+        grid-template-columns: 1fr;
+    }
+
+    .event-image {
+        min-height: 300px;
+    }
+
+    .event-content {
+        padding: 30px;
+    }
+
+    .recommendation-card {
+        grid-template-columns: 50px 1fr;
+    }
+
+    .recommendation-image {
+        grid-column: 2;
+    }
+
+    .recommendation-image img {
+        height: 220px;
+    }
+
+    .recommendation-content {
+        grid-column: 1 / -1;
+    }
+
+    .section-title {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 8px;
+    }
+}
+/* =========================================
+   TRIP PLANNER
+========================================= */
+
+.trip-container,
+.itinerary-container {
+    max-width: 1100px;
+    margin: 70px auto;
+    padding: 0 30px;
+}
+
+.trip-container h2,
+.itinerary-container h2 {
+    font-size: 52px;
+    margin: 10px 0;
+}
+
+.trip-intro {
+    font-size: 20px;
+    max-width: 700px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.trip-card {
+    background: #f8f0df;
+    border: 1px solid #d8c39b;
+    border-radius: 30px;
+    padding: 40px;
+}
+
+.trip-card h3 {
+    font-size: 25px;
+    margin-top: 30px;
+}
+
+.trip-card label {
+    display: block;
+    margin: 15px 0 8px;
+    font-weight: 600;
+}
+
+.trip-card input,
+.trip-card select {
+    width: 100%;
+    padding: 16px;
+    border-radius: 12px;
+    border: 1px solid #d8c39b;
+    background: #fffaf0;
+    font-size: 16px;
+    font-family: inherit;
+}
+
+
+/* INTERESTS */
+
+.interest-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.interest {
+    padding: 13px 20px;
+    border-radius: 30px;
+    border: 1px solid #d8c39b;
+    background: transparent;
+    color: #68452e;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.interest.active {
+    background: #55663c;
+    color: white;
+}
+
+
+/* LOCATION */
+
+.location-box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #e9ddc5;
+    padding: 20px;
+    border-radius: 18px;
+    margin-top: 15px;
+}
+
+.location-box p {
+    margin: 5px 0 0;
+}
+
+.location-box button {
+    margin-left: auto;
+    border: none;
+    background: #55663c;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+
+/* GENERATE BUTTON */
+
+.generate-btn {
+    display: inline-block;
+    margin-top: 35px;
+    background: #55663c;
+    color: white;
+    border: none;
+    padding: 17px 30px;
+    border-radius: 30px;
+    font-size: 17px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+/* =========================================
+   ITINERARY
+========================================= */
+
+.trip-summary {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.trip-summary div {
+    background: #e9ddc5;
+    padding: 25px;
+    border-radius: 20px;
+}
+
+.trip-summary span {
+    display: block;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.trip-summary strong {
+    display: block;
+    font-size: 18px;
+}
+
+.trip-summary small {
+    display: block;
+    margin-top: 5px;
+}
+
+
+.day-section {
+    margin: 50px 0;
+}
+
+.day-title {
+    border-bottom: 1px solid #d8c39b;
+    margin-bottom: 25px;
+}
+
+.day-title span {
+    font-size: 13px;
+    letter-spacing: 3px;
+}
+
+.day-title h3 {
+    font-size: 32px;
+    margin: 8px 0 20px;
+}
+
+
+.timeline-item {
+    display: grid;
+    grid-template-columns: 130px 1fr;
+    gap: 25px;
+    margin-bottom: 25px;
+}
+
+.time {
+    font-weight: bold;
+    padding-top: 25px;
+}
+
+
+.timeline-card {
+    background: #fffaf0;
+    border: 1px solid #d8c39b;
+    border-radius: 22px;
+    padding: 25px;
+}
+
+.category {
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.timeline-card h3 {
+    font-size: 28px;
+    margin: 10px 0;
+}
+
+.timeline-card p {
+    line-height: 1.6;
+}
+
+.distance {
+    margin: 20px 0;
+}
+
+.navigate-btn {
+    color: #55663c;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+.map-section {
+    background: #e9ddc5;
+    padding: 35px;
+    border-radius: 25px;
+    margin-bottom: 60px;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+    .trip-container,
+    .itinerary-container {
+        padding: 0 18px;
+    }
+
+    .trip-container h2,
+    .itinerary-container h2 {
+        font-size: 38px;
+    }
+
+    .trip-card {
+        padding: 25px;
+    }
+
+    .location-box {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .location-box button {
+        margin-left: 0;
+    }
+
+    .trip-summary {
+        grid-template-columns: 1fr;
+    }
+
+    .timeline-item {
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+
+    .time {
+        padding-top: 10px;
+    }
+
+}
+.trip-planner-banner {
+    margin: 60px 0;
+    padding: 40px;
+    border-radius: 28px;
+    background: #55663c;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.trip-planner-banner h2 {
+    font-size: 36px;
+    margin: 10px 0;
+}
+
+.trip-planner-banner p {
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+.trip-planner-banner .generate-btn {
+    background: #f8f0df;
+    color: #68452e;
+    white-space: nowrap;
+}
+.trip-result-card {
+    margin-top: 30px;
+    padding: 24px;
+    border-radius: 16px;
+}
+.trip-result-card p {
+    padding: 14px 0;
+    margin: 0;
+    border-bottom: 1px solid #ddd;
+}
+.itinerary-subtitle {
+    margin-top: -8px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    opacity: 0.7;
+}
+/* =========================
+   TRIP PAGE HEADER FIX
+========================= */
+
+.top-section {
+    min-height: 180px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 50px;
+}
+
+.menu {
+    position: absolute;
+    left: 50px;
+    top: 60px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.brand {
+    text-align: center;
+}
+
+.star {
+    font-size: 35px;
+    margin-bottom: -5px;
+}
+
+.brand h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 58px;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.brand p {
+    font-family: "Playfair Display", serif;
+    font-size: 22px;
+    margin-top: 5px;
+}
+
+.temple {
+    position: absolute;
+    right: 50px;
+    top: 60px;
+    font-size: 55px;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 0 30px 25px;
+}
+
+.main-nav a {
+    padding: 13px 25px;
+    border: 1px solid #cdb995;
+    border-radius: 35px;
+    text-decoration: none;
+    color: #68452c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
+}
+.itinerary-date {
+    font-size: 14px;
+    margin-bottom: 12px;
+    opacity: 0.75;
+}
+/* =========================
+   TRIP RESULT POLISH
+========================= */
+
+.trip-result-card {
+    background: #f8f0df;
+    border: 1px solid #d8c5a5;
+    box-shadow: 0 8px 25px rgba(80, 50, 30, 0.08);
+}
+
+.trip-result-card h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 28px;
+    color: #68452e;
+    margin-bottom: 12px;
+}
+
+.trip-result-card a {
+    color: #9a5b32;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.trip-result-card a:hover {
+    text-decoration: underline;
+}
+/* =========================
+   LANGUAGE SELECTOR
+========================= */
+
+.language-selector {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-left: 10px;
+}
+
+.language-selector label {
+    font-size: 14px;
+    color: #68452c;
+    font-weight: 600;
+}
+
+.language-selector select {
+    padding: 9px 12px;
+    border: 1px solid #cdb995;
+    border-radius: 20px;
+    background: #f8f0df;
+    color: #68452c;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+    outline: none;
+}
+
+.language-selector select:focus {
+    border-color: #9a5b32;
+}
+/* =========================================================
+   KARNAPURA MELA PAGE
+   This section only affects karnapura.html
+   ========================================================= */
+
+.karnapura-page {
+    background: #f4ead7;
+    color: #5a3b24;
+}
+
+
+/* =========================
+   HERO
+   ========================= */
+
+.kp-hero {
+    width: min(1180px, 92%);
+    margin: 55px auto 70px;
+
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+
+    background: #fffaf0;
+
+    border-radius: 28px;
+    overflow: hidden;
+
+    box-shadow: 0 18px 45px rgba(90, 59, 36, 0.12);
+}
+
+.kp-hero-image {
+    min-height: 560px;
+    position: relative;
+    overflow: hidden;
+}
+
+.kp-hero-image::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.02),
+        rgba(0, 0, 0, 0.15)
+    );
+}
+
+.kp-hero-image img {
+    width: 100%;
+    height: 100%;
+    min-height: 560px;
+
+    object-fit: cover;
+    display: block;
+
+    transition: transform 0.5s ease;
+}
+
+.kp-hero:hover .kp-hero-image img {
+    transform: scale(1.03);
+}
+
+
+.kp-hero-content {
+    padding: 65px 55px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.kp-category {
+    display: inline-block;
+
+    width: fit-content;
+
+    padding: 8px 16px;
+
+    border-radius: 30px;
+
+    background: #ead8bb;
+
+    color: #805b35;
+
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+
+.kp-hero-content h1 {
+    margin: 22px 0 18px;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(42px, 5vw, 68px);
+    line-height: 1.05;
+
+    color: #4e301d;
+}
+
+.kp-hero-content > p {
+    max-width: 520px;
+
+    margin: 0 0 35px;
+
+    color: #795b43;
+
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+
+.kp-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+
+    padding-top: 28px;
+
+    border-top: 1px solid #dfcdb1;
+}
+
+.kp-meta > div {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.kp-meta-icon {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #ead8bb;
+
+    font-size: 18px;
+}
+
+.kp-meta small {
+    display: block;
+
+    margin-bottom: 3px;
+
+    color: #9a7959;
+
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+
+.kp-meta strong {
+    color: #5a3b24;
+
+    font-size: 13px;
+    font-weight: 500;
+}
+
+
+/* =========================
+   INTRO
+   ========================= */
+
+.kp-intro {
+    width: min(800px, 90%);
+
+    margin: 0 auto 90px;
+
+    text-align: center;
+}
+
+.kp-eyebrow {
+    display: inline-block;
+
+    color: #a2774d;
+
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.kp-intro h2 {
+    margin: 15px 0 22px;
+
+    font-family: "Playfair Display", serif;
+
+    color: #4e301d;
+
+    font-size: clamp(32px, 4vw, 48px);
+    line-height: 1.2;
+}
+
+.kp-intro p {
+    margin: auto;
+
+    color: #795b43;
+
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+
+/* =========================
+   GENERAL SECTION
+   ========================= */
+
+.kp-section {
+    width: min(1180px, 92%);
+
+    margin: 0 auto 90px;
+}
+
+.kp-section-heading {
+    display: flex;
+
+    align-items: flex-end;
+    justify-content: space-between;
+
+    gap: 30px;
+
+    margin-bottom: 35px;
+}
+
+.kp-section-heading > div {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.kp-section-heading > div > span {
+    color: #b48655;
+    font-size: 18px;
+}
+
+.kp-section-heading h2 {
+    margin: 0;
+
+    font-family: "Playfair Display", serif;
+
+    color: #4e301d;
+
+    font-size: 34px;
+}
+
+.kp-section-heading > p {
+    margin: 0;
+
+    color: #927255;
+
+    font-size: 13px;
+}
+
+
+/* =========================
+   INFO CARDS
+   ========================= */
+
+.kp-info-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 22px;
+}
+
+.kp-info-card {
+    position: relative;
+
+    padding: 35px 30px 32px;
+
+    background: #fffaf0;
+
+    border: 1px solid #eadcc6;
+
+    border-radius: 20px;
+
+    box-shadow: 0 10px 30px rgba(90, 59, 36, 0.06);
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.kp-info-card:hover {
+    transform: translateY(-7px);
+
+    box-shadow: 0 18px 35px rgba(90, 59, 36, 0.12);
+}
+
+.kp-card-icon {
+    width: 58px;
+    height: 58px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 22px;
+
+    border-radius: 50%;
+
+    background: #efe0c7;
+
+    font-size: 25px;
+}
+
+.kp-info-card > span {
+    position: absolute;
+
+    top: 28px;
+    right: 28px;
+
+    color: #c3a77f;
+
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.kp-info-card h3 {
+    margin: 0 0 12px;
+
+    font-family: "Playfair Display", serif;
+
+    color: #573821;
+
+    font-size: 24px;
+}
+
+.kp-info-card p {
+    margin: 0;
+
+    color: #80664e;
+
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+
+/* =========================
+   DATE SECTION
+   ========================= */
+
+.kp-date-section {
+    width: min(1180px, 92%);
+
+    margin: 0 auto 90px;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    gap: 35px;
+
+    padding: 55px 65px;
+
+    background: #6b452b;
+
+    border-radius: 25px;
+
+    overflow: hidden;
+
+    box-shadow: 0 18px 40px rgba(90, 59, 36, 0.18);
+}
+
+.kp-date-section::before {
+    content: "✦";
+
+    position: absolute;
+
+    right: 45px;
+    top: 20px;
+
+    color: rgba(255, 255, 255, 0.12);
+
+    font-size: 100px;
+}
+
+.kp-date-decoration {
+    width: 70px;
+    height: 70px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid rgba(255, 255, 255, 0.25);
+
+    border-radius: 50%;
+
+    color: #f4d9a8;
+
+    font-size: 25px;
+}
+
+.kp-date-content {
+    position: relative;
+    z-index: 1;
+}
+
+.kp-date-content .kp-eyebrow {
+    color: #e4c798;
+}
+
+.kp-date-content h2 {
+    margin: 8px 0 10px;
+
+    font-family: "Playfair Display", serif;
+
+    color: #fff7e8;
+
+    font-size: 38px;
+}
+
+.kp-date-content > p {
+    max-width: 650px;
+
+    margin: 0 0 25px;
+
+    color: #eadbc4;
+
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.kp-date-box {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+    padding: 14px 20px;
+
+    background: rgba(255, 255, 255, 0.1);
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+    border-radius: 12px;
+}
+
+.kp-date-box small {
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: #d9bc8c;
+
+    font-size: 9px;
+    letter-spacing: 1.5px;
+}
+
+.kp-date-box strong {
+    color: #fff8e9;
+
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.kp-date-box > span {
+    font-size: 24px;
+}
+
+
+/* =========================
+   EXPERIENCE CARDS
+   ========================= */
+
+.kp-experience-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 18px;
+}
+
+.kp-experience-card {
+    position: relative;
+
+    min-height: 290px;
+
+    padding: 30px 25px;
+
+    background: #fffaf0;
+
+    border: 1px solid #eadcc6;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    transition: transform 0.3s ease;
+}
+
+.kp-experience-card:hover {
+    transform: translateY(-6px);
+}
+
+.kp-number {
+    position: absolute;
+
+    top: 18px;
+    right: 20px;
+
+    color: #d8c09e;
+
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.kp-experience-icon {
+    font-size: 32px;
+
+    margin-bottom: 22px;
+}
+
+.kp-experience-card h3 {
+    margin: 0 0 12px;
+
+    font-family: "Playfair Display", serif;
+
+    color: #573821;
+
+    font-size: 23px;
+}
+
+.kp-experience-card p {
+    margin: 0;
+
+    color: #80664e;
+
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+
+/* =========================
+   CULTURAL STORY
+   ========================= */
+
+.kp-story {
+    width: min(1180px, 92%);
+
+    margin: 0 auto 90px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 70px;
+
+    padding: 65px;
+
+    background: #ead8bb;
+
+    border-radius: 25px;
+}
+
+.kp-story-left h2 {
+    max-width: 500px;
+
+    margin: 15px 0 0;
+
+    font-family: "Playfair Display", serif;
+
+    color: #4e301d;
+
+    font-size: clamp(32px, 4vw, 45px);
+
+    line-height: 1.2;
+}
+
+.kp-story-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.kp-story-right p {
+    margin: 0;
+
+    color: #6e5038;
+
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+.kp-story-line {
+    width: 70px;
+    height: 2px;
+
+    margin: 25px 0 15px;
+
+    background: #a4774e;
+}
+
+.kp-story-right > span {
+    color: #987552;
+
+    font-size: 10px;
+    letter-spacing: 1.5px;
+}
+
+
+/* =========================
+   LOCATION
+   ========================= */
+
+.kp-visit-section {
+    margin-bottom: 60px;
+}
+
+.kp-location-card {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    gap: 25px;
+
+    padding: 40px;
+
+    background: #fffaf0;
+
+    border: 1px solid #eadcc6;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+}
+
+.kp-location-icon {
+    width: 70px;
+    height: 70px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #ead8bb;
+
+    font-size: 28px;
+}
+
+.kp-location-content h3 {
+    margin: 6px 0 8px;
+
+    font-family: "Playfair Display", serif;
+
+    color: #573821;
+
+    font-size: 28px;
+}
+
+.kp-location-content p {
+    margin: 0;
+
+    color: #80664e;
+
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.kp-location-note {
+    margin-top: 15px;
+
+    color: #9a7049;
+
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.kp-location-pattern {
+    position: absolute;
+
+    right: 40px;
+
+    color: #ead8bb;
+
+    font-size: 100px;
+}
+
+
+/* =========================
+   TIP
+   ========================= */
+
+.kp-tip {
+    width: min(1000px, 92%);
+
+    margin: 0 auto 70px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 25px;
+
+    padding: 35px 40px;
+
+    background: #f9f0df;
+
+    border-left: 5px solid #b48655;
+
+    border-radius: 15px;
+
+    box-shadow: 0 8px 25px rgba(90, 59, 36, 0.05);
+}
+
+.kp-tip-icon {
+    width: 58px;
+    height: 58px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #ead8bb;
+
+    font-size: 25px;
+}
+
+.kp-tip h2 {
+    margin: 7px 0 7px;
+
+    font-family: "Playfair Display", serif;
+
+    color: #573821;
+
+    font-size: 25px;
+}
+
+.kp-tip p {
+    margin: 0;
+
+    color: #80664e;
+
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   BUTTONS
+   ========================= */
+
+.kp-navigation {
+    width: min(1180px, 92%);
+
+    margin: 0 auto 80px;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 18px;
+
+    flex-wrap: wrap;
+}
+
+.kp-primary-button,
+.kp-secondary-button {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-height: 50px;
+
+    padding: 0 25px;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+
+    font-size: 13px;
+    font-weight: 500;
+
+    transition: all 0.3s ease;
+}
+
+.kp-primary-button {
+    background: #6b452b;
+
+    color: #fff8eb;
+
+    box-shadow: 0 8px 18px rgba(90, 59, 36, 0.15);
+}
+
+.kp-primary-button:hover {
+    background: #54351f;
+
+    transform: translateY(-2px);
+}
+
+.kp-secondary-button {
+    background: transparent;
+
+    color: #6b452b;
+
+    border: 1px solid #b99770;
+}
+
+.kp-secondary-button:hover {
+    background: #ead8bb;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 900px) {
+
+    .kp-hero {
+        grid-template-columns: 1fr;
+    }
+
+    .kp-hero-image {
+        min-height: 400px;
+    }
+
+    .kp-hero-image img {
+        min-height: 400px;
+    }
+
+    .kp-hero-content {
+        padding: 45px 35px;
+    }
+
+    .kp-info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .kp-experience-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .kp-story {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+
+        padding: 45px 35px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .kp-hero {
+        width: 94%;
+        margin-top: 30px;
+
+        border-radius: 20px;
+    }
+
+    .kp-hero-image {
+        min-height: 300px;
+    }
+
+    .kp-hero-image img {
+        min-height: 300px;
+    }
+
+    .kp-hero-content {
+        padding: 35px 25px;
+    }
+
+    .kp-hero-content h1 {
+        font-size: 42px;
+    }
+
+    .kp-section,
+    .kp-intro,
+    .kp-date-section,
+    .kp-story,
+    .kp-tip,
+    .kp-navigation {
+        width: 94%;
+    }
+
+    .kp-section-heading {
+        display: block;
+    }
+
+    .kp-section-heading h2 {
+        font-size: 29px;
+    }
+
+    .kp-section-heading > p {
+        margin-top: 8px;
+    }
+
+    .kp-date-section {
+        padding: 40px 25px;
+
+        display: block;
+    }
+
+    .kp-date-decoration {
+        margin-bottom: 20px;
+    }
+
+    .kp-date-content h2 {
+        font-size: 32px;
+    }
+
+    .kp-date-box {
+        width: 100%;
+
+        box-sizing: border-box;
+    }
+
+    .kp-experience-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .kp-experience-card {
+        min-height: auto;
+    }
+
+    .kp-story {
+        padding: 40px 25px;
+    }
+
+    .kp-location-card {
+        padding: 30px 25px;
+
+        align-items: flex-start;
+    }
+
+    .kp-location-pattern {
+        display: none;
+    }
+
+    .kp-tip {
+        align-items: flex-start;
+
+        padding: 28px 22px;
+    }
+
+    .kp-navigation {
+        flex-direction: column;
+    }
+
+    .kp-primary-button,
+    .kp-secondary-button {
+        width: 100%;
+    }
+
+}

@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Explore - Sanskritee</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header class="header">
+
+        <div class="menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class="logo">
+            <div class="lotus">✧</div>
+
+            <h1>Namaste</h1>
+
+            <p>Welcome to Sanskritee</p>
+        </div>
+
+        <div class="monument-icon">
+            🕌
+        </div>
+
+    </header>
+
+
+    <!-- NAVIGATION -->
+
+    <nav class="navigation">
+
+        <a href="index.html" class="nav-button">
+            🏠
+            <span>Home</span>
+        </a>
+
+        <a href="#" class="nav-button">
+            ☆
+            <span>Speciality of Day</span>
+        </a>
+
+        <a href="explore.html" class="nav-button active">
+            ◇
+            <span>Explore</span>
+        </a>
+
+    </nav>
+
+
+    <!-- EXPLORE PAGE -->
+
+    <main>
+
+        <section class="explore-heading">
+
+            <p>Discover places around you</p>
+
+            <h2>Explore Chhatrapati Sambhajinagar</h2>
+
+            <p class="explore-description">
+                Discover famous monuments, ancient caves, forts,
+                temples and hidden cultural treasures.
+            </p>
+
+        </section>
+
+
+        <!-- SEARCH -->
+
+        <div class="search-box">
+
+            <span>🔍</span>
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search heritage places..."
+            >
+
+        </div>
+
+
+        <!-- FILTERS -->
+
+        <div class="filters">
+
+            <button class="filter active-filter" data-category="all">
+                All
+            </button>
+
+            <button class="filter" data-category="monument">
+                Monuments
+            </button>
+            <button class="filter" data-category="caves">
+                Caves
+            </button>
+            <button class="filter" data-category="fort">
+                Forts
+            </button>
+            <button class="filter" data-category="temple">
+                Temples
+            </button>
+
+        </div>
+        <!-- PLACES SECTION -->
+
+        <section class="places-section">
+
+            <div class="section-heading">
+            <h2>Places to Discover</h2>
+            <span>Nearby</span>
+        </div>
+
+        <div class="places-grid">
+         <!-- PLACE 1 -->
+
+<article class="place-card" data-category="monument" data-place="bibi">
+
+    <img
+        src="../assets/images/bibi.png"
+        alt="Bibi Ka Maqbara"
+    >
+
+    <div class="place-info">
+
+        <span class="category">
+            Monument
+        </span>
+
+        <h3>Bibi Ka Maqbara</h3>
+
+        <p>
+            A magnificent monument known for its Mughal architecture.
+        </p>
+
+        <div class="place-bottom">
+
+            <span>📍 2.4 km away</span>
+
+            <a href="place.html?place=bibi">
+                Explore →
+            </a>
+
+        </div>
+
+    </div>
+
+</article>
+<!-- PLACE 2 -->
+
+<article class="place-card" data-category="fort" data-place="daulatabad">
+
+    <img
+        src="../assets/images/df.png"
+        alt="Daulatabad Fort"
+    >
+
+    <div class="place-info">
+
+        <span class="category">
+            Fort
+        </span>
+
+        <h3>Daulatabad Fort</h3>
+
+        <p>
+            A historic hill fort famous for its unique defensive architecture.
+        </p>
+
+        <div class="place-bottom">
+
+            <span>📍 15 km away</span>
+
+            <a href="place.html?place=daulatabad">
+                Explore →
+            </a>
+
+        </div>
+
+    </div>
+
+</article>
+<!-- PLACE 3 -->
+
+<article class="place-card" data-category="caves" data-place="ajanta">
+
+    <img
+        src="../assets/images/ac.png"
+        alt="Ajanta Caves"
+    >
+
+    <div class="place-info">
+
+        <span class="category">
+            Caves
+        </span>
+
+        <h3>Ajanta Caves</h3>
+
+        <p>
+            Ancient rock-cut caves famous for paintings and Buddhist heritage.
+        </p>
+
+        <div class="place-bottom">
+
+            <span>📍 100 km away</span>
+
+            <a href="place.html?place=ajanta">
+                Explore →
+            </a>
+
+        </div>
+
+    </div>
+
+</article>
+<!-- PLACE 4 -->
+
+<article class="place-card" data-category="caves" data-place="ellora">
+
+    <img
+        src="../assets/images/e.png"
+        alt="Ellora Caves"
+    >
+
+    <div class="place-info">
+
+        <span class="category">
+            Caves
+        </span>
+
+        <h3>Ellora Caves</h3>
+
+        <p>
+            A remarkable heritage complex representing multiple traditions.
+        </p>
+
+        <div class="place-bottom">
+
+            <span>📍 30 km away</span>
+
+            <a href="place.html?place=ellora">
+                Explore →
+            </a>
+
+        </div>
+
+    </div>
+
+</article>
+<!-- PLACE 5 -->
+
+<article class="place-card" data-category="temple" data-place="grishneshwar">
+
+    <img
+        src="../assets/images/g.png"
+        alt="Grishneshwar Temple"
+    >
+
+    <div class="place-info">
+
+        <span class="category">
+            Temple
+        </span>
+
+        <h3>Grishneshwar Temple</h3>
+
+        <p>
+            A historic temple near Ellora, known for its religious
+            and cultural significance.
+        </p>
+
+        <div class="place-bottom">
+
+            <span>📍 30 km away</span>
+
+            <a href="place.html?place=grishneshwar">
+                Explore →
+            </a>
+
+        </div>
+
+    </div>
+
+</article>
+<!-- PLACE 6 -->
+
+<article class="place-card" data-category="caves" data-place="grishneshwar">
+
+    <img
+        src="../assets/images/auc.png"
+        alt="Aurangabad Caves"
+    >
+
+    <div class="place-info">
+
+        <span class="category">
+            Caves
+        </span>
+
+        <h3>Aurangabad Caves</h3>
+
+        <p>
+            An ancient rock-cut cave complex known for its sculptures and Buddhist heritage.
+        </p>
+
+        <div class="place-bottom">
+
+            <span>📍 5 km away</span>
+
+            <a href="place.html?place=aurangabadCaves">
+                Explore →
+            </a>
+
+        </div>
+
+    </div>
+
+</article>
+<!-- PLACE 7 -->
+
+<article class="place-card" data-category="monument" data-place="panchakki">
+
+    <img
+        src="../assets/images/p.png"
+        alt="Panchakki"
+    >
+
+    <div class="place-info">
+
+        <span class="category">
+            Monument
+        </span>
+
+        <h3>Panchakki</h3>
+
+        <p>
+            A historic water mill known for its ingenious engineering and peaceful surroundings.
+        </p>
+
+        <div class="place-bottom">
+
+            <span>📍 3 km away</span>
+
+            <a href="place.html?place=panchakki">
+                Explore →
+            </a>
+
+        </div>
+
+    </div>
+
+</article>
+<!-- PLACE 8 -->
+
+<article class="place-card" data-category="monument" data-place="gates">
+
+    <img
+        src="../assets/images/gates.png"
+        alt="52 Historic Gates of Chhatrapati Sambhajinagar"
+    >
+
+    <div class="place-info">
+
+        <span class="category">
+            Monument
+        </span>
+
+        <h3>52 Historic Gates</h3>
+
+        <p>
+            A remarkable collection of historic gates reflecting the city's architectural heritage.
+        </p>
+
+        <div class="place-bottom">
+
+            <span>📍 4 km away</span>
+
+            <a href="place.html?place=gates">
+                Explore →
+            </a>
+
+        </div>
+
+    </div>
+
+</article>
+<!-- PLACE 9 -->
+
+<article class="place-card" data-category="monument" data-place="aurangzebTomb">
+
+    <img
+        src="../assets/images/at.png"
+        alt="Aurangzeb's Tomb"
+    >
+
+    <div class="place-info">
+
+        <span class="category">
+            Monument
+        </span>
+
+        <h3>Aurangzeb's Tomb</h3>
+
+        <p>
+            A historic tomb near Khuldabad associated with the Mughal period.
+        </p>
+
+        <div class="place-bottom">
+
+            <span>📍 25 km away</span>
+
+            <a href="place.html?place=aurangzebTomb">
+                Explore →
+            </a>
+
+        </div>
+
+    </div>
+
+</article>
+<!-- PLACE 10 -->
+
+<article class="place-card" data-category="monument" data-place="soneriMahal">
+
+    <img
+        src="../assets/images/sone.png"
+        alt="Soneri Mahal"
+    >
+
+    <div class="place-info">
+
+        <span class="category">
+            Monument
+        </span>
+
+        <h3>Soneri Mahal</h3>
+
+        <p>
+            A historic palace known for its architecture and cultural heritage.
+        </p>
+
+        <div class="place-bottom">
+
+            <span>📍 4 km away</span>
+
+            <a href="place.html?place=soneriMahal">
+                Explore →
+            </a>
+
+        </div>
+
+    </div>
+
+</article>
+    </div>
+
+</section>
+        <!-- LOCATION -->
+
+        <div class="location-bar">
+
+            <span>📍</span>
+
+            <div>
+                <strong>Your location</strong>
+                <p id="locationStatus">Finding heritage places near you</p>
+            </div>
+
+            <button id="locationBtn">
+                  Use my location
+            </button>
+
+        </div>
+    <div class="trip-planner-banner">
+
+    <div>
+        <span>🧭 PLAN YOUR JOURNEY</span>
+
+        <h2>
+            Not sure where to start?
+        </h2>
+
+        <p>
+            Tell us your dates and interests.
+            We'll create a heritage journey for you.
+        </p>
+    </div>
+
+    <a href="trip.html" class="generate-btn">
+        Plan My Trip →
+    </a>
+
+    </div>
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <div>
+            📍 Chhatrapati Sambhajinagar
+        </div>
+
+        <div class="footer-message">
+
+            <strong>One city</strong>
+            <strong>Many stories</strong>
+            <strong>Infinite heritage</strong>
+
+        </div>
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
