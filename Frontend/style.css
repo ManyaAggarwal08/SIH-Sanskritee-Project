@@ -65,7 +65,6 @@ body {
 .logo h1 {
     font-family: "Playfair Display", serif;
     font-size: 58px;
-    font-style: italic;
     font-weight: 500;
 }
 
@@ -117,7 +116,7 @@ body {
 
     font-family: "Playfair Display", serif;
     font-size: 20px;
-
+        
     transition: 0.3s;
 }
 
@@ -1954,4 +1953,971 @@ main {
 
 .language-selector select:focus {
     border-color: #9a5b32;
+}
+/* =========================================================
+   KARNAPURA MELA PAGE
+   This section only affects karnapura.html
+   ========================================================= */
+
+.karnapura-page {
+    background: #f4ead7;
+    color: #5a3b24;
+}
+
+
+/* =========================
+   HERO
+   ========================= */
+
+.kp-hero {
+    width: min(1180px, 92%);
+    margin: 55px auto 70px;
+
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+
+    background: #fffaf0;
+
+    border-radius: 28px;
+    overflow: hidden;
+
+    box-shadow: 0 18px 45px rgba(90, 59, 36, 0.12);
+}
+
+.kp-hero-image {
+    min-height: 560px;
+    position: relative;
+    overflow: hidden;
+}
+
+.kp-hero-image::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.02),
+        rgba(0, 0, 0, 0.15)
+    );
+}
+
+.kp-hero-image img {
+    width: 100%;
+    height: 100%;
+    min-height: 560px;
+
+    object-fit: cover;
+    display: block;
+
+    transition: transform 0.5s ease;
+}
+
+.kp-hero:hover .kp-hero-image img {
+    transform: scale(1.03);
+}
+
+
+.kp-hero-content {
+    padding: 65px 55px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.kp-category {
+    display: inline-block;
+
+    width: fit-content;
+
+    padding: 8px 16px;
+
+    border-radius: 30px;
+
+    background: #ead8bb;
+
+    color: #805b35;
+
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+
+.kp-hero-content h1 {
+    margin: 22px 0 18px;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(42px, 5vw, 68px);
+    line-height: 1.05;
+
+    color: #4e301d;
+}
+
+.kp-hero-content > p {
+    max-width: 520px;
+
+    margin: 0 0 35px;
+
+    color: #795b43;
+
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+
+.kp-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+
+    padding-top: 28px;
+
+    border-top: 1px solid #dfcdb1;
+}
+
+.kp-meta > div {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.kp-meta-icon {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #ead8bb;
+
+    font-size: 18px;
+}
+
+.kp-meta small {
+    display: block;
+
+    margin-bottom: 3px;
+
+    color: #9a7959;
+
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+
+.kp-meta strong {
+    color: #5a3b24;
+
+    font-size: 13px;
+    font-weight: 500;
+}
+
+
+/* =========================
+   INTRO
+   ========================= */
+
+.kp-intro {
+    width: min(800px, 90%);
+
+    margin: 0 auto 90px;
+
+    text-align: center;
+}
+
+.kp-eyebrow {
+    display: inline-block;
+
+    color: #a2774d;
+
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.kp-intro h2 {
+    margin: 15px 0 22px;
+
+    font-family: "Playfair Display", serif;
+
+    color: #4e301d;
+
+    font-size: clamp(32px, 4vw, 48px);
+    line-height: 1.2;
+}
+
+.kp-intro p {
+    margin: auto;
+
+    color: #795b43;
+
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+
+/* =========================
+   GENERAL SECTION
+   ========================= */
+
+.kp-section {
+    width: min(1180px, 92%);
+
+    margin: 0 auto 90px;
+}
+
+.kp-section-heading {
+    display: flex;
+
+    align-items: flex-end;
+    justify-content: space-between;
+
+    gap: 30px;
+
+    margin-bottom: 35px;
+}
+
+.kp-section-heading > div {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.kp-section-heading > div > span {
+    color: #b48655;
+    font-size: 18px;
+}
+
+.kp-section-heading h2 {
+    margin: 0;
+
+    font-family: "Playfair Display", serif;
+
+    color: #4e301d;
+
+    font-size: 34px;
+}
+
+.kp-section-heading > p {
+    margin: 0;
+
+    color: #927255;
+
+    font-size: 13px;
+}
+
+
+/* =========================
+   INFO CARDS
+   ========================= */
+
+.kp-info-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 22px;
+}
+
+.kp-info-card {
+    position: relative;
+
+    padding: 35px 30px 32px;
+
+    background: #fffaf0;
+
+    border: 1px solid #eadcc6;
+
+    border-radius: 20px;
+
+    box-shadow: 0 10px 30px rgba(90, 59, 36, 0.06);
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.kp-info-card:hover {
+    transform: translateY(-7px);
+
+    box-shadow: 0 18px 35px rgba(90, 59, 36, 0.12);
+}
+
+.kp-card-icon {
+    width: 58px;
+    height: 58px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 22px;
+
+    border-radius: 50%;
+
+    background: #efe0c7;
+
+    font-size: 25px;
+}
+
+.kp-info-card > span {
+    position: absolute;
+
+    top: 28px;
+    right: 28px;
+
+    color: #c3a77f;
+
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.kp-info-card h3 {
+    margin: 0 0 12px;
+
+    font-family: "Playfair Display", serif;
+
+    color: #573821;
+
+    font-size: 24px;
+}
+
+.kp-info-card p {
+    margin: 0;
+
+    color: #80664e;
+
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+
+/* =========================
+   DATE SECTION
+   ========================= */
+
+.kp-date-section {
+    width: min(1180px, 92%);
+
+    margin: 0 auto 90px;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    gap: 35px;
+
+    padding: 55px 65px;
+
+    background: #6b452b;
+
+    border-radius: 25px;
+
+    overflow: hidden;
+
+    box-shadow: 0 18px 40px rgba(90, 59, 36, 0.18);
+}
+
+.kp-date-section::before {
+    content: "✦";
+
+    position: absolute;
+
+    right: 45px;
+    top: 20px;
+
+    color: rgba(255, 255, 255, 0.12);
+
+    font-size: 100px;
+}
+
+.kp-date-decoration {
+    width: 70px;
+    height: 70px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid rgba(255, 255, 255, 0.25);
+
+    border-radius: 50%;
+
+    color: #f4d9a8;
+
+    font-size: 25px;
+}
+
+.kp-date-content {
+    position: relative;
+    z-index: 1;
+}
+
+.kp-date-content .kp-eyebrow {
+    color: #e4c798;
+}
+
+.kp-date-content h2 {
+    margin: 8px 0 10px;
+
+    font-family: "Playfair Display", serif;
+
+    color: #fff7e8;
+
+    font-size: 38px;
+}
+
+.kp-date-content > p {
+    max-width: 650px;
+
+    margin: 0 0 25px;
+
+    color: #eadbc4;
+
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.kp-date-box {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+    padding: 14px 20px;
+
+    background: rgba(255, 255, 255, 0.1);
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+    border-radius: 12px;
+}
+
+.kp-date-box small {
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: #d9bc8c;
+
+    font-size: 9px;
+    letter-spacing: 1.5px;
+}
+
+.kp-date-box strong {
+    color: #fff8e9;
+
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.kp-date-box > span {
+    font-size: 24px;
+}
+
+
+/* =========================
+   EXPERIENCE CARDS
+   ========================= */
+
+.kp-experience-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 18px;
+}
+
+.kp-experience-card {
+    position: relative;
+
+    min-height: 290px;
+
+    padding: 30px 25px;
+
+    background: #fffaf0;
+
+    border: 1px solid #eadcc6;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    transition: transform 0.3s ease;
+}
+
+.kp-experience-card:hover {
+    transform: translateY(-6px);
+}
+
+.kp-number {
+    position: absolute;
+
+    top: 18px;
+    right: 20px;
+
+    color: #d8c09e;
+
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.kp-experience-icon {
+    font-size: 32px;
+
+    margin-bottom: 22px;
+}
+
+.kp-experience-card h3 {
+    margin: 0 0 12px;
+
+    font-family: "Playfair Display", serif;
+
+    color: #573821;
+
+    font-size: 23px;
+}
+
+.kp-experience-card p {
+    margin: 0;
+
+    color: #80664e;
+
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+
+/* =========================
+   CULTURAL STORY
+   ========================= */
+
+.kp-story {
+    width: min(1180px, 92%);
+
+    margin: 0 auto 90px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 70px;
+
+    padding: 65px;
+
+    background: #ead8bb;
+
+    border-radius: 25px;
+}
+
+.kp-story-left h2 {
+    max-width: 500px;
+
+    margin: 15px 0 0;
+
+    font-family: "Playfair Display", serif;
+
+    color: #4e301d;
+
+    font-size: clamp(32px, 4vw, 45px);
+
+    line-height: 1.2;
+}
+
+.kp-story-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.kp-story-right p {
+    margin: 0;
+
+    color: #6e5038;
+
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+.kp-story-line {
+    width: 70px;
+    height: 2px;
+
+    margin: 25px 0 15px;
+
+    background: #a4774e;
+}
+
+.kp-story-right > span {
+    color: #987552;
+
+    font-size: 10px;
+    letter-spacing: 1.5px;
+}
+
+
+/* =========================
+   LOCATION
+   ========================= */
+
+.kp-visit-section {
+    margin-bottom: 60px;
+}
+
+.kp-location-card {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    gap: 25px;
+
+    padding: 40px;
+
+    background: #fffaf0;
+
+    border: 1px solid #eadcc6;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+}
+
+.kp-location-icon {
+    width: 70px;
+    height: 70px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #ead8bb;
+
+    font-size: 28px;
+}
+
+.kp-location-content h3 {
+    margin: 6px 0 8px;
+
+    font-family: "Playfair Display", serif;
+
+    color: #573821;
+
+    font-size: 28px;
+}
+
+.kp-location-content p {
+    margin: 0;
+
+    color: #80664e;
+
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.kp-location-note {
+    margin-top: 15px;
+
+    color: #9a7049;
+
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.kp-location-pattern {
+    position: absolute;
+
+    right: 40px;
+
+    color: #ead8bb;
+
+    font-size: 100px;
+}
+
+
+/* =========================
+   TIP
+   ========================= */
+
+.kp-tip {
+    width: min(1000px, 92%);
+
+    margin: 0 auto 70px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 25px;
+
+    padding: 35px 40px;
+
+    background: #f9f0df;
+
+    border-left: 5px solid #b48655;
+
+    border-radius: 15px;
+
+    box-shadow: 0 8px 25px rgba(90, 59, 36, 0.05);
+}
+
+.kp-tip-icon {
+    width: 58px;
+    height: 58px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #ead8bb;
+
+    font-size: 25px;
+}
+
+.kp-tip h2 {
+    margin: 7px 0 7px;
+
+    font-family: "Playfair Display", serif;
+
+    color: #573821;
+
+    font-size: 25px;
+}
+
+.kp-tip p {
+    margin: 0;
+
+    color: #80664e;
+
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   BUTTONS
+   ========================= */
+
+.kp-navigation {
+    width: min(1180px, 92%);
+
+    margin: 0 auto 80px;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 18px;
+
+    flex-wrap: wrap;
+}
+
+.kp-primary-button,
+.kp-secondary-button {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-height: 50px;
+
+    padding: 0 25px;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+
+    font-size: 13px;
+    font-weight: 500;
+
+    transition: all 0.3s ease;
+}
+
+.kp-primary-button {
+    background: #6b452b;
+
+    color: #fff8eb;
+
+    box-shadow: 0 8px 18px rgba(90, 59, 36, 0.15);
+}
+
+.kp-primary-button:hover {
+    background: #54351f;
+
+    transform: translateY(-2px);
+}
+
+.kp-secondary-button {
+    background: transparent;
+
+    color: #6b452b;
+
+    border: 1px solid #b99770;
+}
+
+.kp-secondary-button:hover {
+    background: #ead8bb;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 900px) {
+
+    .kp-hero {
+        grid-template-columns: 1fr;
+    }
+
+    .kp-hero-image {
+        min-height: 400px;
+    }
+
+    .kp-hero-image img {
+        min-height: 400px;
+    }
+
+    .kp-hero-content {
+        padding: 45px 35px;
+    }
+
+    .kp-info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .kp-experience-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .kp-story {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+
+        padding: 45px 35px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .kp-hero {
+        width: 94%;
+        margin-top: 30px;
+
+        border-radius: 20px;
+    }
+
+    .kp-hero-image {
+        min-height: 300px;
+    }
+
+    .kp-hero-image img {
+        min-height: 300px;
+    }
+
+    .kp-hero-content {
+        padding: 35px 25px;
+    }
+
+    .kp-hero-content h1 {
+        font-size: 42px;
+    }
+
+    .kp-section,
+    .kp-intro,
+    .kp-date-section,
+    .kp-story,
+    .kp-tip,
+    .kp-navigation {
+        width: 94%;
+    }
+
+    .kp-section-heading {
+        display: block;
+    }
+
+    .kp-section-heading h2 {
+        font-size: 29px;
+    }
+
+    .kp-section-heading > p {
+        margin-top: 8px;
+    }
+
+    .kp-date-section {
+        padding: 40px 25px;
+
+        display: block;
+    }
+
+    .kp-date-decoration {
+        margin-bottom: 20px;
+    }
+
+    .kp-date-content h2 {
+        font-size: 32px;
+    }
+
+    .kp-date-box {
+        width: 100%;
+
+        box-sizing: border-box;
+    }
+
+    .kp-experience-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .kp-experience-card {
+        min-height: auto;
+    }
+
+    .kp-story {
+        padding: 40px 25px;
+    }
+
+    .kp-location-card {
+        padding: 30px 25px;
+
+        align-items: flex-start;
+    }
+
+    .kp-location-pattern {
+        display: none;
+    }
+
+    .kp-tip {
+        align-items: flex-start;
+
+        padding: 28px 22px;
+    }
+
+    .kp-navigation {
+        flex-direction: column;
+    }
+
+    .kp-primary-button,
+    .kp-secondary-button {
+        width: 100%;
+    }
+
 }

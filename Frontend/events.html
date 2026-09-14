@@ -108,74 +108,81 @@
 
         </section>
 
-
         <!-- SPECIAL EVENT -->
 
-        <section class="special-event">
+<section class="special-event">
 
-            <div class="event-image">
+    <div class="event-image">
 
-                <img
-                    src="https://images.unsplash.com/photo-1604608672516-f1b9c2b0e2c2?auto=format&fit=crop&w=1000&q=80"
-                    alt="Indian cultural festival"
-                >
+        <img
+            id="eventMainImage"
+            src="../assets/images/g.png"
+            alt="Heritage Experience"
+        >
 
-                <span class="event-badge">
-                    ✦ SPECIAL EXPERIENCE
-                </span>
+        <span class="event-badge">
+            ✦ SPECIAL EXPERIENCE
+        </span>
 
-            </div>
-
-
-            <div class="event-content">
-
-                <p class="event-label">
-                    CULTURAL HIGHLIGHT
-                </p>
-
-                <h2 id="festivalTitle">
-                    Festival & Heritage Experiences
-                </h2>
-
-                <p id="festivalDescription">
-                    Explore temples, heritage sites and cultural
-                    traditions that become especially vibrant during
-                    festival periods.
-                </p>
+    </div>
 
 
-                <div class="event-info">
+    <div class="event-content">
 
-                    <div>
-                        <span>📅</span>
+        <p class="event-label">
+            CULTURAL HIGHLIGHT
+        </p>
 
-                        <div>
-                            <strong>Festival Season</strong>
-                            <small>Special cultural activities</small>
-                        </div>
-                    </div>
+        <h2 id="festivalTitle">
+            Heritage Experiences for Your Date
+        </h2>
+
+        <p id="festivalDescription">
+            Explore heritage places and cultural experiences that can make your selected visit date special.
+        </p>
 
 
-                    <div>
-                        <span>📍</span>
+        <div class="event-info">
 
-                        <div>
-                            <strong>Chhatrapati Sambhajinagar</strong>
-                            <small>Heritage & cultural sites</small>
-                        </div>
-                    </div>
+            <div>
+                <span>📅</span>
 
+                <div>
+                    <strong id="eventDateInfo">Heritage Experience</strong>
                 </div>
-
-
-                <button class="primary-event-button">
-                    Explore Experience →
-                </button>
-
             </div>
 
-        </section>
 
+            <div>
+                <span>📍</span>
+
+                <div>
+                    <strong id="eventLocationInfo">Chhatrapati Sambhajinagar</strong>
+                </div>
+            </div>
+
+        </div>
+
+    <button
+        id="exploreExperienceButton"
+        class="primary-event-button"
+        onclick="
+            if (
+                document.getElementById('visitDate').value >= '2026-10-11' &&
+                document.getElementById('visitDate').value <= '2026-10-20'
+            ) {
+                window.location.href = 'karnapura.html';
+            } else {
+                window.location.href = 'place.html?place=grishneshwar';
+            }
+        "
+    >
+        Explore Experience →
+    </button>
+ 
+    </div>
+
+</section>
 
         <!-- RECOMMENDED PLACES -->
 
@@ -209,7 +216,8 @@
                 <div class="recommendation-image">
 
                     <img
-                        src="https://images.unsplash.com/photo-1600100397608-f010a3a6f5f4?auto=format&fit=crop&w=800&q=80"
+                        id="recommendation1Image"
+                        src="../assets/images/g.png"
                         alt="Heritage temple"
                     >
 
@@ -259,7 +267,7 @@
                 <div class="recommendation-image">
 
                     <img
-                        src="https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=800&q=80"
+                        src="../assets/images/bibi.png"
                         alt="Bibi Ka Maqbara"
                     >
 
@@ -309,7 +317,7 @@
                 <div class="recommendation-image">
 
                     <img
-                        src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=800&q=80"
+                        src="../assets/images/e.png"
                         alt="Indian heritage architecture"
                     >
 
@@ -396,8 +404,232 @@
         </div>
 
     </footer>
-    <script src="script.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
 
+    const visitDate = document.getElementById("visitDate");
+    const selectedDateText = document.getElementById("selectedDateText");
+
+    const festivalTitle = document.getElementById("festivalTitle");
+    const festivalDescription = document.getElementById("festivalDescription");
+
+    const eventDateInfo = document.getElementById("eventDateInfo");
+    const eventLocationInfo = document.getElementById("eventLocationInfo");
+
+    const eventMainImage = document.getElementById("eventMainImage");
+
+    const recommendation1Image =
+        document.getElementById("recommendation1Image");
+
+    const recommendation1Name =
+        document.getElementById("recommendation1Name");
+
+    const recommendation1Description =
+        document.getElementById("recommendation1Description");
+
+    const exploreButton =
+        document.getElementById("exploreExperienceButton");
+
+
+    function updateExperience() {
+
+        if (!visitDate || !visitDate.value) {
+            return;
+        }
+
+        const selectedDate = visitDate.value;
+
+
+        /* =========================
+           SHOW SELECTED DATE
+           ========================= */
+
+        const dateObject =
+            new Date(selectedDate + "T00:00:00");
+
+        const formattedDate =
+            dateObject.toLocaleDateString("en-IN", {
+                day: "numeric",
+                month: "long",
+                year: "numeric"
+            });
+
+        if (selectedDateText) {
+            selectedDateText.textContent =
+                "Your selected visit date: " + formattedDate;
+        }
+
+
+        /* =========================
+           DEFAULT CONTENT
+           ========================= */
+
+        if (festivalTitle) {
+            festivalTitle.textContent =
+                "Heritage Experiences for Your Date";
+        }
+
+        if (festivalDescription) {
+            festivalDescription.textContent =
+                "Explore heritage places and cultural experiences that can make your selected visit date special.";
+        }
+
+        if (eventDateInfo) {
+            eventDateInfo.textContent =
+                "Heritage Experience";
+        }
+
+        if (eventLocationInfo) {
+            eventLocationInfo.textContent =
+                "Chhatrapati Sambhajinagar";
+        }
+
+        if (eventMainImage) {
+            eventMainImage.src =
+                "../assets/images/g.png";
+        }
+
+        if (recommendation1Image) {
+            recommendation1Image.src =
+                "../assets/images/g.png";
+        }
+
+        if (recommendation1Name) {
+            recommendation1Name.textContent =
+                "Grishneshwar Temple";
+        }
+
+        if (recommendation1Description) {
+            recommendation1Description.textContent =
+                "Visit this historic temple near Ellora and experience the cultural atmosphere of the region during the festive season.";
+        }
+
+
+        /* =========================
+           KARNAPURA MELA
+           OCTOBER 11–20, 2026
+           ========================= */
+
+        if (
+            selectedDate >= "2026-10-11" &&
+            selectedDate <= "2026-10-20"
+        ) {
+
+            if (festivalTitle) {
+                festivalTitle.textContent =
+                    "Karnapura Mela";
+            }
+
+            if (festivalDescription) {
+                festivalDescription.textContent =
+                    "Karnapura Mela, also known as Karnapura Yatra, is a vibrant Navratri tradition where devotion to the goddess meets the colourful culture of a traditional Indian fair.";
+            }
+
+            if (eventDateInfo) {
+                eventDateInfo.textContent =
+                    "October 11–20, 2026";
+            }
+
+            if (eventLocationInfo) {
+                eventLocationInfo.textContent =
+                    "Karnapura, Chhatrapati Sambhajinagar";
+            }
+
+            if (eventMainImage) {
+                eventMainImage.src =
+                    "../assets/images/km.png";
+            }
+
+            if (recommendation1Image) {
+                recommendation1Image.src =
+                    "../assets/images/km.png";
+            }
+
+        }
+
+
+        /* =========================
+           NOVEMBER
+           ========================= */
+
+        else if (dateObject.getMonth() === 10) {
+
+            if (festivalTitle) {
+                festivalTitle.textContent =
+                    "Heritage & Cultural Experiences";
+            }
+
+            if (festivalDescription) {
+                festivalDescription.textContent =
+                    "Discover heritage monuments, temples and cultural traditions that make the region special during this season.";
+            }
+
+            if (recommendation1Name) {
+                recommendation1Name.textContent =
+                    "Ellora Caves";
+            }
+
+            if (recommendation1Description) {
+                recommendation1Description.textContent =
+                    "Explore the remarkable rock-cut heritage of Ellora and discover the different cultural traditions represented at the site.";
+            }
+
+        }
+
+    }
+
+
+    /* =========================
+       DATE CHANGE
+       ========================= */
+
+    if (visitDate) {
+        visitDate.addEventListener("change", updateExperience);
+    }
+
+
+    /* =========================
+       EXPLORE BUTTON
+       ========================= */
+
+    if (exploreButton) {
+
+        exploreButton.addEventListener("click", function () {
+
+            const selectedDate =
+                visitDate ? visitDate.value : "";
+
+            if (!selectedDate) {
+
+                alert("Please select your visit date first.");
+                return;
+
+            }
+
+
+            if (
+                selectedDate >= "2026-10-11" &&
+                selectedDate <= "2026-10-20"
+            ) {
+
+                window.location.href =
+                    "mela.html";
+
+            } else {
+
+                window.location.href =
+                    "place.html?place=grishneshwar";
+
+            }
+
+        });
+
+    }
+
+
+});
+</script>
+<script src="script.js"></script>
 </body>
 
 </html>
